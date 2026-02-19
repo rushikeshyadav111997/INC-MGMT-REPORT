@@ -1,0 +1,30 @@
+table 'Linked Issues'
+	lineageTag: 36b2d9b6-74a0-4e32-a9b4-4237c8f21922
+
+	column Key
+		dataType: string
+		lineageTag: 088b3865-cbe8-4384-9651-80b722ab8222
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Linked Issues: Key'
+		dataType: string
+		lineageTag: 1ff5a003-5bb0-4b54-8a67-554807ad1cb7
+		summarizeBy: none
+		sourceColumn: Linked Issues: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Linked Issues' = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    #"Linked Issues_table" = Source{[Name="Linked Issues",Signature="table"]}[Data]
+				in
+				    #"Linked Issues_table"
+
+	annotation PBI_ResultType = Table
+

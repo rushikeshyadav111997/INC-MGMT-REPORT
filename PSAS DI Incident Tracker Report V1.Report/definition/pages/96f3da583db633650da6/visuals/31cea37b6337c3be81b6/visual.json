@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "31cea37b6337c3be81b6",
+  "position": {
+    "x": 0,
+    "y": 82.001730374173633,
+    "z": 7000,
+    "height": 1585,
+    "width": 70.3155818540434,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Left Panel",
+    "groupMode": "ScaleMode"
+  }
+}

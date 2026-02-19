@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "19971796fcefa3f22160",
+  "position": {
+    "x": 397.54310238147281,
+    "y": 12.005360210813151,
+    "z": 1000,
+    "height": 197.67330263071014,
+    "width": 360.2950088576028,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "Inc total WIP",
+    "groupMode": "ScaleMode"
+  },
+  "parentGroupName": "8d7939af677dc80d552e"
+}

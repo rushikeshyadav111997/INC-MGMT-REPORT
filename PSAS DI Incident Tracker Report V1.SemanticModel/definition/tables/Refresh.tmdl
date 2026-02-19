@@ -1,0 +1,76 @@
+table Refresh
+	lineageTag: b1eb79e1-6c25-4363-9f51-a0d61b654a41
+
+	column 'Last Refresh'
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: 1b67d43c-9142-4c70-b838-d48de69202b4
+		summarizeBy: none
+		sourceColumn: Last Refresh
+
+		variation Variation
+			isDefault
+			relationship: 10ff7802-297f-49ed-8e3b-a7beb6428735
+			defaultHierarchy: LocalDateTable_a80987fb-fe02-4ea6-a664-60bb3e53875e.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f6d334a8-bd40-4c02-81c6-cf68b2ea77c5
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 0f461f2e-6a2a-4dec-8e92-f06512e905ea
+			defaultHierarchy: LocalDateTable_84f56392-e92d-49f9-aa11-be6ecbd03cb0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: da6ea290-6826-42f9-ab25-3a5bd00f592c
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Last Refresh Date' = CONCATENATE("Last Refresh Date: ",FORMAT('Refresh'[Last Refresh],"dd mmm yyyy"))
+		lineageTag: 2d3679df-9fdf-4074-a29e-1f3e74d93186
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Refresh = m
+		mode: import
+		source =
+				let
+				    RefreshTime = DateTime.LocalNow(),  // This captures the current date and time
+				    Source = #table({"Last Refresh"}, {{RefreshTime}}),
+				    #"Duplicated Column" = Table.DuplicateColumn(Source, "Last Refresh", "Last Refresh - Copy"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"Last Refresh - Copy", "Date"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type date}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Changed Type", "Last Refresh", "Last Refresh - Copy"),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Duplicated Column1",{{"Last Refresh - Copy", type time}}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Changed Type1",{{"Last Refresh - Copy", "Time"}}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Renamed Columns1",{{"Last Refresh", type datetime}})  // Creates a table with the captured date and time
+				in
+				    #"Changed Type2"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

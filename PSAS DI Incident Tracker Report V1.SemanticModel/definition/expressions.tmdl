@@ -1,0 +1,12 @@
+expression Components =
+		let
+		    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzY5MDc1ZTEtMGJlYy00ODg5LWFmMTAtNzY1YzBkY2U2", null, [Implementation="2.0"]),
+		    Components_table = Source{[Name="Components",Signature="table"]}[Data]
+		in
+		    Components_table
+	lineageTag: 25e72903-61ec-4f54-80e7-ab7f92b13959
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

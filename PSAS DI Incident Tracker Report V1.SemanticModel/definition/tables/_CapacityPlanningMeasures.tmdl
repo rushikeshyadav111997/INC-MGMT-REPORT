@@ -1,0 +1,101 @@
+table _CapacityPlanningMeasures
+	lineageTag: 271b2b00-3560-4834-9b94-ca756dc70098
+
+	measure 'Resource Utilization (%)' =
+			
+			VAR _teamcapacity = DISTINCTCOUNT(Issues[Current Assignee:  Name]) * 20 * 8
+			VAR _effecitvecapacity = _teamcapacity - 200
+			
+			VAR _utilization = DIVIDE(SUM(Issues[Time Spent]),_effecitvecapacity)
+			
+			RETURN _utilization
+			
+			-- old formula DIVIDE([Actual Hours], [Available Hours])
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 4a4ac0c9-2cdc-48b2-8004-3f7b27202361
+
+	measure 'Actual Hours' = SUM('Tempo Report'[Logged Hours])
+		formatString: 0.0
+		lineageTag: 0d1c192a-2ba4-4256-be44-128fcbed0019
+
+	measure 'Available Hours' = DISTINCTCOUNT('Tempo Report'[User Account ID])*8*20
+		formatString: 0.0
+		lineageTag: 129bd786-ee5b-4b22-9601-ee39658c2f7c
+
+	measure 'Planned Capacity Hours' = ```
+			
+			 VAR _plannedCapcity = DISTINCTCOUNT('Tempo Report'[User Account ID])*8*20
+			VAR _plannedleave = 200
+			
+			Return _plannedCapcity - _plannedleave
+			```
+		formatString: 0.0
+		lineageTag: 3750046a-698f-4ec2-a792-71f979aca976
+
+	measure 'Actual Capacity Hours' = SUM('Tempo Report'[Logged Hours])
+		formatString: 0.0
+		lineageTag: 552bbded-8efb-49e2-ac3b-efc195bdebb2
+
+	measure 'Planned vs Actual (Capacity)' =
+			SUM(Issues[Original estimate]) - SUM(Issues[Time Spent])
+			
+			// older formula - [Planned Capacity Hours] - [Actual Capacity Hours]
+		formatString: 0.0
+		lineageTag: 40230a06-92f2-48d7-a134-7a7a0913f35c
+
+	measure 'Billable Hours' = ```
+			
+			CALCULATE (
+			    SUM ( Issues[Time Spent] ),
+			    NOT CONTAINSSTRING (Issues[PDO Details], "Leave Tracker" )
+			)
+			
+			```
+		formatString: 0.0
+		lineageTag: 10b696e5-f9a4-4a4d-8a12-0af0f5b77dce
+
+	measure 'Non-Billable Hours' = ```
+			
+			CALCULATE (
+			    SUM ( Issues[Time Spent] ),
+			    CONTAINSSTRING ( Issues[PDO Details], "Leave Tracker" )
+			)
+			
+			```
+		formatString: 0.0
+		lineageTag: 8f7763dc-7956-425d-ab9f-76be401c6c5f
+
+	measure 'Non-Billable Hours %' = DIVIDE([Non-Billable Hours], SUM(Issues[Time Spent]))
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 6fe82ca3-4b71-4183-8385-55c8c2fe8ba3
+
+	measure 'Billable Hours %' = DIVIDE([Billable Hours], SUM(Issues[Time Spent]))
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 0c636ff1-97ad-48c9-b87f-3a1f13b66feb
+
+	measure 'Planned vs Actual (Capacity) %' =
+			
+			DIVIDE(SUM(Issues[Original estimate]), SUM(Issues[Time Spent]))
+			
+			--older phone -- DIVIDE([Planned Capacity Hours], [Actual Capacity Hours])
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: c30ddb66-2f40-45d9-bc18-26aa40ec43af
+
+	measure 'Available Hours (Daily)' =
+			
+			DISTINCTCOUNT ( 'Tempo Report'[User Account ID] ) * 8
+		formatString: 0.0
+		lineageTag: e03621e3-5c07-4359-a101-b85a18a1c234
+
+	partition _CapacityPlanningMeasures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

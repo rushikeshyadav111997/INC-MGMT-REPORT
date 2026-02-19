@@ -1,0 +1,50 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Components","Comments","Component","Issues","Linked Issues","Sprints","Sub-tasks","Measure Table","Worklogs","Refresh","_CapacityPlanningMeasures"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_13d38ccc-a035-48af-b9c7-662e6a3ae4b4
+ref table Comments
+ref table LocalDateTable_85948901-de81-4b3e-bb4f-4d8751f02922
+ref table LocalDateTable_4e366d0c-1513-4886-adf8-0cde128fac1a
+ref table Component
+ref table Issues
+ref table LocalDateTable_00a475b1-cbb3-4605-a55a-972e50177984
+ref table LocalDateTable_d5d3dba0-a6ec-4ca3-ad22-a2e7073869f6
+ref table LocalDateTable_597d659a-0e45-4e2f-94fa-850f5d8921ff
+ref table LocalDateTable_cdb28d31-a748-4cd4-8172-be7415f90470
+ref table 'Linked Issues'
+ref table Sprints
+ref table LocalDateTable_e941977e-7433-4f48-9a16-b3a691ad544f
+ref table LocalDateTable_64191795-35b2-4ee2-8445-f54592d59e8f
+ref table Sub-tasks
+ref table 'Measure Table'
+ref table LocalDateTable_9bfcbc92-342a-4b28-b4e2-f2a19a648bc4
+ref table Worklogs
+ref table LocalDateTable_e8432850-6960-47f4-b008-6bc6871ddc3a
+ref table LocalDateTable_7c51b642-e07a-4dec-8d05-ae35eed5e794
+ref table LocalDateTable_4665e2b5-443e-4b26-b717-75b4654c49a2
+ref table Refresh
+ref table LocalDateTable_a80987fb-fe02-4ea6-a664-60bb3e53875e
+ref table LocalDateTable_84f56392-e92d-49f9-aa11-be6ecbd03cb0
+ref table LocalDateTable_a86335d2-ee18-4dbe-9319-5dce1dc67711
+ref table LocalDateTable_1a7d6c50-413c-4784-b0e3-a440b8697687
+ref table LocalDateTable_029a9194-df7a-4396-912b-150d436c5a79
+ref table LocalDateTable_ccabd5e3-afb8-4644-affa-bd3f073e75cb
+ref table _CapacityPlanningMeasures
+ref table Date_Table
+ref table 'Tempo Date'
+ref table LocalDateTable_553eacdd-c7b0-4634-8fe8-4d8d63e9a449
+ref table LocalDateTable_acb3eece-1557-4fbb-a628-4736965b8981
+
+ref cultureInfo en-US
+

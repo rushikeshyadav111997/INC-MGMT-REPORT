@@ -1,0 +1,334 @@
+table Worklogs
+	lineageTag: bd14740e-b78d-4dd3-bf96-374fad18145e
+
+	column Key
+		dataType: string
+		lineageTag: d3e07608-54ac-4fc0-8fa3-c028c5d474b3
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry Date (MM/dd/yyyy)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5ad37921-f2ee-4c70-a5ed-891a559b230a
+		summarizeBy: none
+		sourceColumn: Time Entry Date (MM/dd/yyyy)
+
+		variation Variation
+			isDefault
+			relationship: bd052b72-cfbe-4b3f-a11a-71342357a284
+			defaultHierarchy: LocalDateTable_e8432850-6960-47f4-b008-6bc6871ddc3a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b63290dc-1d5d-4881-9eb3-93d49c02ee96
+		summarizeBy: none
+		sourceColumn: Time Entry Date
+
+		variation Variation
+			isDefault
+			relationship: 4d6f78ad-f5d7-4bb8-a540-28e9d89d9290
+			defaultHierarchy: LocalDateTable_7c51b642-e07a-4dec-8d05-ae35eed5e794.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry Description'
+		dataType: string
+		lineageTag: 81976e88-73c5-4299-ae4a-eaf6ae3a7fa9
+		summarizeBy: none
+		sourceColumn: Time Entry Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry User AccountId'
+		dataType: string
+		lineageTag: e64f00f9-04c1-4b78-94df-6000c79002a7
+		summarizeBy: none
+		sourceColumn: Time Entry User AccountId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry Logged Time'
+		dataType: double
+		lineageTag: b45c796a-c745-4539-a284-4f818327cfd8
+		summarizeBy: sum
+		sourceColumn: Time Entry Logged Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Time Entry User Email'
+		dataType: string
+		lineageTag: 6b81e2fa-d0fa-4ddf-9b6b-2045d2bba944
+		summarizeBy: none
+		sourceColumn: Time Entry User Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry User'
+		dataType: string
+		lineageTag: 50da85cd-fa7b-46b2-9945-cd9cf6f91280
+		summarizeBy: none
+		sourceColumn: Time Entry User
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Entry User isActive?'
+		dataType: string
+		lineageTag: d019169c-9821-4e67-bc6c-d48e0cbf47fa
+		summarizeBy: none
+		sourceColumn: Time Entry User isActive?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Worklog Creation Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0b68ceb1-ddde-4b4a-b8fd-286268fd6f19
+		summarizeBy: none
+		sourceColumn: Worklog Creation Date
+
+		variation Variation
+			isDefault
+			relationship: 95c7cd80-c564-4f1f-88de-c741c8892a67
+			defaultHierarchy: LocalDateTable_4665e2b5-443e-4b26-b717-75b4654c49a2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jira Worklog ID'
+		dataType: string
+		lineageTag: 3c9dfb0b-6f96-461a-a103-1b65664ce390
+		summarizeBy: none
+		sourceColumn: Jira Worklog ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Day' = ```
+			
+			    VAR MonthNum = MONTH('Worklogs'[Time Entry Date])
+			    VAR DayNum = DAY('Worklogs'[Time Entry Date])
+			    RETURN 
+			        FORMAT('Worklogs'[Time Entry Date], "MMM") & " " & DayNum
+			
+			```
+		lineageTag: a13e3538-1714-4df6-bff4-5126f94d9e38
+		summarizeBy: none
+		sortByColumn: 'Month Day Sort'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Day Sort' = ```
+			
+			    MONTH('Worklogs'[Time Entry Date]) * 100 + DAY('Worklogs'[Time Entry Date])
+			
+			```
+		formatString: 0
+		lineageTag: de9c467d-babd-4bf5-9c47-b75bd9059c49
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Epic Category' = ```
+			
+			    RELATED(Issues[Parent Issue Summary])
+			```
+		lineageTag: 1ceeffc9-a0d2-42ce-9161-c7eee4b44416
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Task Type'
+		dataType: string
+		lineageTag: 7f253cbe-60c0-45dc-b4ff-46297b2f45b3
+		summarizeBy: none
+		sourceColumn: Tempo: Task Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account name'
+		dataType: string
+		lineageTag: 1ac93120-f562-4478-b80b-abbd19609abb
+		summarizeBy: none
+		sourceColumn: Tempo: Account name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account key'
+		dataType: string
+		lineageTag: b6708c68-9b1c-436e-889a-41d0b68c7c06
+		summarizeBy: none
+		sourceColumn: Tempo: Account key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Billable Hours'
+		dataType: double
+		lineageTag: c777648a-ffb8-484d-8f10-497adaf8f01d
+		summarizeBy: sum
+		sourceColumn: Tempo: Billable Hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo: Work Type'
+		dataType: string
+		lineageTag: 3b1ff473-cb63-43fe-a8bc-6d5f7546642b
+		summarizeBy: none
+		sourceColumn: Tempo: Work Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Worklog ID'
+		dataType: string
+		lineageTag: b5f783b0-8788-48a2-8616-8c389eba740c
+		summarizeBy: none
+		sourceColumn: Tempo: Worklog ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account Category Name'
+		dataType: string
+		lineageTag: 227400a7-3935-4681-bc0d-d108e1c3062a
+		summarizeBy: none
+		sourceColumn: Tempo: Account Category Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account Category Type'
+		dataType: string
+		lineageTag: 5b280060-a1b9-4ae7-bc81-db21c2ee1792
+		summarizeBy: none
+		sourceColumn: Tempo: Account Category Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account'
+		dataType: string
+		lineageTag: ea002fa8-c03a-4552-a370-f696bd9fc414
+		summarizeBy: none
+		sourceColumn: Tempo: Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account customer'
+		dataType: string
+		lineageTag: 86f22889-39c2-482c-9f3a-e2dc38a8cc3b
+		summarizeBy: none
+		sourceColumn: Tempo: Account customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo: Account ID'
+		dataType: string
+		lineageTag: ee19b2e9-fddb-454a-9e45-a68b51a50efa
+		summarizeBy: none
+		sourceColumn: Tempo: Account ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SprintName = ```
+			
+			IF (
+			    Worklogs[KTLO Category] = "Enhancement POD",
+			    SWITCH (
+			        Worklogs[YearMonth],
+			        "2026-Jun", "PSAS DI Enhancement Sprint 6",
+			        "2026-May", "PSAS DI Enhancement Sprint 5",
+			        "2026-Apr", "PSAS DI Enhancement Sprint 4",
+			        "2026-Mar", "PSAS DI Enhancement Sprint 3",
+			        "2026-Feb", "PSAS DI Enhancement Sprint 2",
+			        "2026-Jan", "PSAS DI Enhancement Sprint 1",
+			        BLANK ()
+			    ),
+			    IF (
+			        Worklogs[KTLO Category] = "PSaS DI Products",
+			        SWITCH (
+			            Worklogs[YearMonth],
+			            "2026-Jun", "PSAS DI Sprint 27",
+			            "2026-May", "PSAS DI Sprint 26",
+			            "2026-Apr", "PSAS DI Sprint 25",
+			            "2026-Mar", "PSAS DI Sprint 24",
+			            "2026-Feb", "PSAS DI Sprint 23",
+			            "2026-Jan", "PSAS DI Sprint 22",
+			            "2025-Dec", "PSAS DI Sprint 21",
+			            "2025-Nov", "PSAS DI Sprint 20",
+			            "2025-Oct", "PSAS DI Sprint 19",
+			            "2025-Sep", "PSAS DI Sprint 18",
+			            "2025-Aug", "PSAS DI Sprint 17",
+			            "2025-Jul", "PSAS DI Sprint 16",
+			            "2025-Jun", "PSAS DI Sprint 15",
+			            "2025-May", "PSAS DI Sprint 14",
+			            BLANK ()
+			        ),
+			        IF (
+			            Worklogs[KTLO Category] = "PSaS Data & Analytics",
+			            SWITCH (
+			                Worklogs[YearMonth],
+			                "2026-Jun", "Classic PSAS DI Ops Sprint Jun",
+			                "2026-May", "Classic PSAS DI Ops Sprint May",
+			                "2026-Apr", "Classic PSAS DI Ops Sprint Apr",
+			                "2026-Mar", "Classic PSAS DI Ops Sprint Mar",
+			                "2026-Feb", "Classic PSAS DI Ops Sprint Feb",
+			                "2026-Jan", "Classic PSAS DI Ops Sprint Jan",
+			                "2025-Dec", "Classic PSAS DI Ops Sprint Dec",
+			                "2025-Nov", "Classic PSAS DI Ops Sprint Nov",
+			                "2025-Oct", "Classic PSAS DI Ops Sprint Oct",
+			                "2025-Sep", "Classic PSAS DI Ops Sprint Sep",
+			                "2025-Aug", "Classic PSAS DI Ops Sprint Aug",
+			                "2025-Jul", "Classic PSAS DI Ops Sprint Jul",
+			                "2025-Jun", "Classic PSAS DI Ops Sprint Jun",
+			                "2025-May", "Classic PSAS DI Ops Sprint May",
+			                BLANK ()
+			            ),
+			            BLANK ()
+			        )
+			    )
+			)
+			
+			```
+		lineageTag: b4ccdcbe-b37b-4d3f-a322-8a3fd689901a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KTLO Category' = ```
+			
+			    RELATED(Issues[KTLO Category])
+			```
+		lineageTag: 149e262b-d116-4d67-8b3c-6cd542876a77
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth = ```
+			
+			    YEAR(Worklogs[Time Entry Date]) & "-" & FORMAT(Worklogs[Time Entry Date], "MMM")
+			```
+		lineageTag: aaa11872-627b-44b6-833f-515e127ec10c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Worklogs = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    Worklogs_table = Source{[Name="Worklogs",Signature="table"]}[Data],
+				    #"Filtered Rows" = Table.SelectRows(Worklogs_table, each ([Time Entry User] <> "Sivakumar Essambattu" and [Time Entry User] <> "Vignesh Hariharan"))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

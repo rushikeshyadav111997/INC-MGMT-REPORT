@@ -1,0 +1,417 @@
+table 'Measure Table'
+	lineageTag: 8bd9add2-1fe2-45fa-b410-90ea1e47a468
+
+	measure 'Total Time Spent' = ```
+			
+			    SUM(Issues[Time Spent])
+			```
+		lineageTag: 9f1c0852-6d8d-4a0e-a349-b976577140bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Time Spent (Total) (Gauge)' = ```
+			
+			
+			VAR res = SUM(Issues[Time Spent])
+			
+			RETURN
+			IF(
+			    ISBLANK(res), 
+			    0 & " H", 
+			    ROUND(res, 0) & " H"
+			)
+			
+			// VAR res = SUM(Worklogs[Time Entry Logged Time])
+			
+			// RETURN
+			// IF(
+			//     ISBLANK(res), 
+			//     0 & " H", 
+			//     ROUND(res, 0) & " H"
+			// )
+			```
+		lineageTag: d3bf11b5-e353-4df7-b56e-55d5330f7627
+
+	measure 'Time Spent (Production Support) (Gauge)' = ```
+			
+			VAR Hours_Spent = CALCULATE(
+			    SUM('Issues'[Time Spent]),
+			    'Issues'[Parent Issue Summary] = "Production Support"
+			)
+			
+			RETURN
+			IF(
+			    ISBLANK(Hours_Spent), 
+			    0 & " H", 
+			    ROUND(Hours_Spent, 0) & " H"
+			)
+			
+			
+			// VAR Hours_Spent = CALCULATE(
+			//     SUM('New File'[Logged Hours]),
+			//     'New File'[Epic] = "Production Support"
+			// )
+			
+			// RETURN
+			// IF(
+			//     ISBLANK(Hours_Spent), 
+			//     0 & " H", 
+			//     ROUND(Hours_Spent, 0) & " H"
+			// )
+			```
+		lineageTag: dc8c26f9-734a-417e-a3ec-a44fe53375d7
+
+	measure 'Time Spent (Service Request)' =
+			
+			var Hours_Spent = (CALCULATE(
+			        SUM('Issues'[Time Spent]),
+			            'Issues'[Parent Issue Summary] = "SERVICE REQUESTS"))
+			
+			RETURN
+			    IF(ISBLANK(Hours_Spent),0, Hours_Spent)
+		formatString: 0
+		lineageTag: cd3d0adb-5236-4a63-b973-63e3c540b81d
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Time Spent (Service Request) (Gauge)' = ```
+			
+			VAR Hours_Spent = CALCULATE(
+			    SUM('Issues'[Time Spent]),
+			    'Issues'[Parent Issue Summary] = "Service Requests"
+			)
+			
+			RETURN
+			IF(
+			    ISBLANK(Hours_Spent), 
+			    0 & " H", 
+			    ROUND(Hours_Spent, 0) & " H"
+			)
+			```
+		lineageTag: c71d22d7-a401-459f-b351-59e28207dd43
+
+	measure 'Time Spent (Enhancement) (Gauge)' = ```
+			
+			VAR Hours_Spent = CALCULATE(
+			    SUM('Issues'[Time Spent]),
+			    'Issues'[Parent Issue Summary] = "ENHANCEMENTS"
+			)
+			
+			RETURN
+			IF(
+			    ISBLANK(Hours_Spent), 
+			    0 & " H", 
+			    ROUND(Hours_Spent, 0) & " H"
+			)
+			```
+		lineageTag: 0b2aee7b-2f47-4f56-ba6c-0f09cac99f27
+
+	measure 'Hours Spent (Automation) (Gauge)' = ```
+			
+			VAR Hours_Spent = CALCULATE(
+			    SUM('Issues'[Time Spent]),
+			    'Issues'[Parent Issue Summary] = "Automation/Innovation"
+			)
+			
+			RETURN
+			IF(
+			    ISBLANK(Hours_Spent), 
+			    0 & " H", 
+			    ROUND(Hours_Spent, 0) & " H"
+			)
+			```
+		lineageTag: 7f4d6c6c-2654-4f5c-96a2-d1500b84b842
+
+	measure 'Time Spent (Automation)' =
+			
+			var Hours_Spent = (CALCULATE(
+			        SUM('Issues'[Time Spent]),
+			            'Issues'[Parent Issue Summary] = "Automation/Innovation"))
+			
+			RETURN
+			    Hours_Spent
+		formatString: 0
+		lineageTag: 1119a3ff-bec4-44ab-b0cc-aa83eb5acf7b
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Time Spent (Enhancement)' =
+			
+			var Hours_Spent = (CALCULATE(
+			        SUM('Issues'[Time Spent]),
+			            'Issues'[Parent Issue Summary] = "ENHANCEMENTS"))
+			
+			RETURN
+			    IF(ISBLANK(Hours_Spent),0, Hours_Spent)
+		formatString: 0
+		lineageTag: 0f3bc837-096c-468f-8b57-a5f6f703b846
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Total Time Spent (sub task)' = ```
+			
+			    SUM(Issues[Original estimate])
+			```
+		lineageTag: 65f8ee61-ec5f-4f20-89ad-c08a353718bf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Hours' =
+			
+			IF (
+			    ISBLANK ( CALCULATE ( SUM ( 'Issues'[Time Spent] ) ) ),
+			    0,
+			    CALCULATE ( SUM ( 'Issues'[Time Spent] ) )
+			)
+		formatString: 0
+		lineageTag: 1d449700-7d6c-44ea-9a2e-fc382b2809e3
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Time Spent (Production Support)' =
+			
+			var Hours_Spent = (CALCULATE(
+			        SUM('Issues'[Time Spent]),
+			            'Issues'[Parent Issue Summary] = "Production Support"))
+			
+			RETURN
+			    Hours_Spent
+		lineageTag: 140676da-7f16-49ab-86e8-57c46aa2f4b3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Hours Spent' = ```
+			
+			    "Total Hours Spent: " & [Total Logged Hours (Tempo)] & " H"
+			    // "Total Hours Spent: " & [Time Spent (Total) (Gauge)]
+			```
+		lineageTag: 380af165-77f6-4bd8-ba81-0dc8a3dddf11
+
+	measure 'Total Logged Hours (Tempo)' = ```
+			
+			
+			// ROUND(SUM('Tempo Details'[Logged Hours]), 0)
+			VAR res = SUM(Worklogs[Time Entry Logged Time])
+			
+			RETURN INT(ROUND(res, 0) )
+			// IF(
+			//     ISBLANK(res), 
+			//     0 & " H", 
+			//     ROUND(res, 0) & " H"
+			// )
+			```
+		lineageTag: 1570b25f-ac0d-4075-9248-7173d68a807e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Time Spent (Production Support)' =
+			
+			var Hours_Spent = (CALCULATE(
+			        AVERAGE('Issues'[Time Spent]),
+			            'Issues'[Parent Issue Summary] = "Production Support"))
+			
+			RETURN
+			    Hours_Spent
+		lineageTag: 282487f8-9dd0-4a06-b436-ab86f38c2638
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# Incident' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('Issues'[Key]),
+			    'Issues'[Parent Issue Summary] = "Production Support"
+			)
+		formatString: 0
+		lineageTag: ea1ded21-ec71-4393-959b-08a685ba5a27
+
+	measure '# Incidents Total' =
+			
+			var a = COUNT(Issues[Key])
+			
+			RETURN if(ISBLANK(a),0,a)
+		formatString: #,0
+		lineageTag: 4ecd5074-2c7f-4264-ab1c-07dd3b97336c
+
+	measure 'Open :' = ```
+			
+			Var _open = 
+			    CALCULATE(
+			        COUNTROWS ( Issues ),
+			        Issues[Current Status] IN { "Delayed", "In Review", "On Hold", "To Do"}
+			    )
+			    
+			
+			RETURN if(_open =0 ,"NO Open INC ",_open)
+			```
+		formatString: #,0
+		lineageTag: 12e12923-7e4d-424f-9946-53e52fcc63ac
+
+	measure 'Closed :' =
+			
+			Var closed = COALESCE(
+			    CALCULATE(
+			        COUNTROWS ( Issues ),
+			        Issues[Current Status] IN { "Closed", "Done", "Blocked" }
+			        && 'Issues'[Parent Issue Summary] = "Production Support"
+			    ),
+			    0
+			)
+			RETURN closed
+		formatString: #,0
+		lineageTag: f90bb3ff-80dd-495c-b78a-0ddbcd9315e1
+
+	measure 'In Progress :' =
+			
+			Var inprogress = COALESCE(
+			    CALCULATE(
+			        COUNTROWS ( Issues ),
+			        Issues[Current Status] IN { "In Progress" }
+			    ),
+			    0
+			)
+			RETURN inprogress
+		formatString: 0
+		lineageTag: dd6f6c7d-6d86-45f6-9d35-3cbf1ec57acb
+
+	measure 'Average Resolution Time (Hours)' = ```
+			
+			var a = AVERAGEX(
+			    FILTER (
+			        Issues,
+			        NOT ISBLANK ( Issues[Resolved] )
+			        && NOT ISBLANK ( Issues[Created] )
+			        && Issues[Current Status] IN { "Closed", "Done", "Blocked" }
+			        && 'Issues'[Parent Issue Summary] = "Production Support"
+			    ),
+			    Issues[Time Spent]
+			)
+			// RETURN if(ISBLANK(a),0,CONCATENATE(a,"H"))
+			RETURN if(ISBLANK(a),0,a)
+			
+			
+			```
+		formatString: 0
+		lineageTag: ce75528c-e4ad-487a-9549-4fbdfb94128d
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Dynamic Filter Text' = ```
+			
+			VAR _Date = 
+			    IF (
+			        ISFILTERED ( 'Date_Table'[Date] ),
+			        FORMAT ( MIN ( 'Date_Table'[Date] ), "dd-MMM-yyyy" )
+			            & " to "
+			            & FORMAT ( MAX ( 'Date_Table'[Date] ), "dd-MMM-yyyy" ),
+			        "All"
+			    )
+			VAR _priority = 
+			    IF(
+			        ISFILTERED(Issues[Priority (P)]),
+			        CONCATENATEX(VALUES(Issues[Priority (P)]), Issues[Priority (P)], ", "),
+			        "All"
+			    )
+			VAR _currentstatus = 
+			    IF(
+			        ISFILTERED(Issues[Current Status]),
+			        CONCATENATEX(VALUES(Issues[Current Status]), Issues[Current Status], ", "),
+			        "All"
+			    )
+			VAR _domain = 
+			    IF(
+			        ISFILTERED(Issues[Component Name]),
+			        CONCATENATEX(VALUES(Issues[Component Name]), Issues[Component Name], ", "),
+			        "All"
+			    )
+			VAR _sprint = 
+			    IF(
+			        ISFILTERED(Issues[Sprints Name]),
+			        CONCATENATEX(VALUES(Issues[Sprints Name]), Issues[Sprints Name], ", "),
+			        "All"
+			    )
+			VAR _Aging = 
+			    IF(
+			        ISFILTERED(Issues[Aging]),
+			        CONCATENATEX(VALUES(Issues[Aging]), Issues[Aging], ", "),
+			        "All"
+			    )
+			VAR _servicetype = 
+			    IF(
+			        ISFILTERED(Issues[Service Type]),
+			        CONCATENATEX(VALUES(Issues[Service Type]), Issues[Service Type], ", "),
+			        "All"
+			    )
+			VAR _ktlocategory = 
+			    IF(
+			        ISFILTERED(Issues[KTLO Category]),
+			        CONCATENATEX(VALUES(Issues[KTLO Category]), Issues[KTLO Category], ", "),
+			        "All"
+			    )
+			VAR _application = 
+			    IF(
+			        ISFILTERED(Issues[Product (2)]),
+			        CONCATENATEX(VALUES(Issues[Product (2)]), Issues[Product (2)], ", "),
+			        "All"
+			    )
+			VAR _requestorname = 
+			    IF(
+			        ISFILTERED(Issues[Requestor:  Name]),
+			        CONCATENATEX(VALUES(Issues[Requestor:  Name]), Issues[Requestor:  Name], ", "),
+			        "All"
+			    )
+			VAR _assignee = 
+			    IF(
+			        ISFILTERED(Issues[Current Assignee:  Name]),
+			        CONCATENATEX(VALUES(Issues[Current Assignee:  Name]), Issues[Current Assignee:  Name], ", "),
+			        "All"
+			    )
+			
+			RETURN
+			"Filters * " &
+			"Date: " & _Date & 
+			" > Priority: " & _priority & 
+			" > Current Status: " & _currentstatus & 
+			" > Domain: " & _domain & 
+			" > Sprint Name: " & _sprint & 
+			" > Aging: " & _Aging & 
+			" > Service Type: " & _servicetype & 
+			" > KTLO Category: " & _ktlocategory & 
+			" > Application: " & _application & 
+			" > Requestor Name: " & _requestorname & 
+			" > Assignee Name: " & _assignee
+			
+			```
+		lineageTag: bd1dc93c-18ce-4159-9874-95b2a29d5f8e
+
+	measure 'Avg Resolution Time in hours' = FORMAT([Average Resolution Time (Hours)], "0.0") & " (hrs)"
+		lineageTag: eb1c0ccc-c0e5-4796-af7b-bcad2132f415
+
+	measure 'Completed Tickets' =
+			
+			var a = CALCULATE(DISTINCTCOUNT(Issues[Key]), Issues[Current Status] IN {"Done", "Closed"})
+			RETURN if(ISBLANK(a),0,a)
+		formatString: 0
+		lineageTag: c018bf7d-37dd-4765-9d61-d05fb2ba18ab
+
+	measure 'In Progress Tickets' =
+			
+			var a = CALCULATE(DISTINCTCOUNT(Issues[Key]), Issues[Current Status] IN {"In Progress", "In Review"})
+			
+			RETURN
+			if(ISBLANK(a),0,a)
+		formatString: 0
+		lineageTag: e68fd21a-0dcd-4077-a3ef-a377b8201c0a
+
+	partition 'Measure Table' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

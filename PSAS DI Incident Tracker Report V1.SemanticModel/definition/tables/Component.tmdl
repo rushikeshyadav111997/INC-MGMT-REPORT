@@ -1,0 +1,46 @@
+table Component
+	lineageTag: cae31900-7af2-4c4a-b808-a3941aeeb3b7
+
+	column Key
+		dataType: string
+		lineageTag: 2668d9b8-2261-42ec-960b-659076d49f87
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Component Id'
+		dataType: string
+		lineageTag: 91cc9871-2a8e-4a57-82ff-75f3de6d5fd9
+		summarizeBy: none
+		sourceColumn: Component Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Component Name'
+		dataType: string
+		lineageTag: 6d7e29e8-bce7-411c-be24-6781a0a9a2cd
+		summarizeBy: none
+		sourceColumn: Component Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Component Description'
+		dataType: string
+		lineageTag: bd595378-8f89-41d5-ba4a-8f4efc50fbb3
+		summarizeBy: none
+		sourceColumn: Component Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Component = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    Components_table = Source{[Name="Components",Signature="table"]}[Data]
+				in
+				    Components_table
+
+	annotation PBI_ResultType = Table
+

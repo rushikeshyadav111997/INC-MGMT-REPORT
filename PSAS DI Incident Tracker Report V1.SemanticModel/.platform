@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PSAS DI Incident Tracker Report V1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6bc0bc45-7b3d-be51-4f49-067fd559d13a"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "4d7c348d99f075616d8e",
+  "position": {
+    "x": 14.206496515115791,
+    "y": 14.32532347504621,
+    "z": 4500,
+    "height": 185,
+    "width": 320,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Resource Utilization (%)",
+    "groupMode": "ScaleMode"
+  },
+  "parentGroupName": "f651e25997f51e2d533a"
+}

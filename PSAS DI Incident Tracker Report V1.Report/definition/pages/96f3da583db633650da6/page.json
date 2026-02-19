@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "96f3da583db633650da6",
+  "displayName": "Capacity Planning",
+  "displayOption": "FitToWidth",
+  "height": 1668,
+  "width": 1445,
+  "pageBinding": {
+    "name": "bad86c92e77ea471750b",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "285L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": -0.1
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "75D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "52bb42558675d5d80732",
+      "target": "9cdd3398fde2440127c4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "52bb42558675d5d80732",
+      "target": "cf1438f4d16997f21947",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9cdd3398fde2440127c4",
+      "target": "a4ee97cb41fbd8f72956",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9cdd3398fde2440127c4",
+      "target": "52bb42558675d5d80732",
+      "type": "NoFilter"
+    }
+  ]
+}

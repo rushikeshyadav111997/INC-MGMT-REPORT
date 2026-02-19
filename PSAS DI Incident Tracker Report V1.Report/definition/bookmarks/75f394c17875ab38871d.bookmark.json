@@ -1,0 +1,2032 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.0.0/schema.json",
+  "displayName": "CP Filter ON",
+  "name": "75f394c17875ab38871d",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "76f818d9bcf810597307",
+      "91ce89f7fc802cbebda7",
+      "2cc02039b27cab63ad7d",
+      "e70c08389883675a776d",
+      "8ab7d145be91fe85f377",
+      "5f2e3c739b994d0e4f84",
+      "4c597206605d37ee9f09",
+      "a4ee97cb41fbd8f72956",
+      "2420d2a8ac12649867bb",
+      "fe7dc50703388fe71d06",
+      "7079d909f860024d2226",
+      "cf1438f4d16997f21947",
+      "9cdd3398fde2440127c4",
+      "781353341bea319f5211",
+      "9b7c92b5060d885c7b30",
+      "da3f17b0ece663f49cf4",
+      "40aa2513515ed4f67089"
+    ],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "96f3da583db633650da6",
+    "sections": {
+      "96f3da583db633650da6": {
+        "visualContainers": {
+          "91ce89f7fc802cbebda7": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "35041e12e54ab6ba4102": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "76f818d9bcf810597307": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "e5d5ffa7efee8cfc02b2": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d35a956a9a44d3d6fd31": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "fe8c9fb314caae7b19b4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8b5cf8d55b332b41914e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measure Table"
+                        }
+                      },
+                      "Property": "# Incident"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "4ae7ab4efa0fab27b35e",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Priority (P)"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Priority (P)"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {}
+            }
+          },
+          "e70c08389883675a776d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "21672ef7d21a3c581450",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date Table"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date Table"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date Table"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8ab7d145be91fe85f377": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "5f2e3c739b994d0e4f84": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c06752bbe2cb714dddea",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Component"
+                        }
+                      },
+                      "Property": "Component Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Component"
+                        }
+                      },
+                      "Property": "Component Name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4c597206605d37ee9f09": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9f0337c6f6d575a7f1f4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Parent Issue Summary"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "d240fc222e62fd763922",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Priority (P)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Priority (P)"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a4ee97cb41fbd8f72956": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "36de3cc0c3d33e915a87",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Service Type"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Service Type"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Service Type"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "fe7dc50703388fe71d06": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "364a70d6ef2fa6dc6090",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Product (2)"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Product (2)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Product (2)"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7079d909f860024d2226": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "cf1438f4d16997f21947": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4fd207f94d4ee8862da4",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "KTLO Category"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'EDW Operations'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Internal Team'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Not Sure'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "KTLO Category"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "KTLO Category"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9cdd3398fde2440127c4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d3735442fbea444dd20e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Sprints Name"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a73885520ba8f79cf3fa",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Current Status"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Current Status"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "781353341bea319f5211": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d3735442fbea444dd20e",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Sprints Name"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Sprints Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Sprints Name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9b7c92b5060d885c7b30": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "15359c5ddafa348f0ab9",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Current Assignee:  Name"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Current Assignee:  Name"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "ac73b4ef67ed658657ce",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Requestor:  Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Requestor:  Name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "da3f17b0ece663f49cf4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d3735442fbea444dd20e",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Sprints Name"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Sprints Name"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a269e3afcd3f076cb4d9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Aging"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Aging"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "40aa2513515ed4f67089": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d625b4784d906c105ad1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0a8d462e80c265c59d96",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Product (2)"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Product (2)"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "3a7104e93ebc1d35ef85",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Full name"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5e25a0d2676b605328f0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c5d6ab4e35a8c793997c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Non-Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Full name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "52bb42558675d5d80732": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b379c9d7c284ac575185",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Resource Utilization (%)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "27d1af469f8db74c7ea2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Work date"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Work date"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Work date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7d0aa837e8464ae13e53": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "077221b3b9bb6a2110e7",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "i"
+                                        }
+                                      },
+                                      "Property": "Key"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Key"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "7b14d0d80d76d31b83d3",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "i",
+                        "Entity": "Issues",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "i"
+                                    }
+                                  },
+                                  "Property": "Parent Issue Summary"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'PRODUCTION SUPPORT'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Issues"
+                        }
+                      },
+                      "Property": "Parent Issue Summary"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "f02e9b7f54604ebbfa09",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Work date"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d414d94b1995a66a12b8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Actual Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "83bf23c5940f5621ef5c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Available Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fc147c0d02fcf0e6050a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Resource Utilization (%)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fff54439d2f167d10417",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned Capacity Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8660edb178c49c92900a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Actual Capacity Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f050569d3d13df4e09f2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned vs Actual (Capacity)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "59c898bd4af85fadfa89",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e25a314c564400f23cd9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e2238821a7f4037e40e3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Non-Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b9a60bb5f9a69903dcc8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Non-Billable Hours %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "842d561077db7d929ef9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Full name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Work date"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tempo Report"
+                        }
+                      },
+                      "Property": "Full name"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "Tempo Report.Work date"
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Tempo Report.Full name"
+                      ],
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null
+                  }
+                }
+              ]
+            }
+          },
+          "d6a405a29dc6c949dedd": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6f5242d5dce82b056184": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fe9150a0d710931fb528",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Refresh"
+                            }
+                          },
+                          "Property": "Last Refresh Date"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "f5820f60167e69fa4235": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "69dcef14bcf9d86a1c70": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7f3bb098a9a5efaeab8b": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "aed3cdf85ac8b393abdf": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "595e64ac52854873a348": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1af273ae91905db4b3d4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0849cf6bc765b7a07a39",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "b2510569a06c4a8054a0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ed11d7e5791a2ea815f3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Billable Hours %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "48a5561d880e6f89aa00": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e670b5572c84a01c631c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Non-Billable Hours"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Non-Billable Hours"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "04a983e2cd36b593a6c3": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "0eea9bf3cb3482e02260": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "2a464c175ffb14c97dc3": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "7bbf1e07098b889adc77": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7b6d43be95437be001d8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "eb34537d39c7ac1d1a80": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "651c9eee54ffd6b50ab0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Resource Utilization (%)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Resource Utilization (%)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "4ee874685f9cb4cd8200": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "6aba32e69856345c753e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6b551f7eb0a1eef26408": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "459c8b0305feff2d8656": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "2dc4b0aa4ac2b3371151": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "09e74a63021a65ae9e21",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned vs Actual (Capacity)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned vs Actual (Capacity)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "25b05ffb3ad53904b17a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4fa572af2b686137bd37",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned vs Actual (Capacity) %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_CapacityPlanningMeasures"
+                        }
+                      },
+                      "Property": "Planned vs Actual (Capacity) %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d61e6b5407528c2207dc": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "2cc02039b27cab63ad7d": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

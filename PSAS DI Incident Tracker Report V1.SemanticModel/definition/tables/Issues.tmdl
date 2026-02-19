@@ -1,0 +1,787 @@
+table Issues
+	lineageTag: abe443f9-c5b1-4191-a9ed-8b6a683b52fb
+
+	measure 'Avg ResolutionTime (Hrs)' =
+			
+			AVERAGEX(Issues, DATEDIFF(Issues[Created], Issues[Resolved], HOUR))
+		lineageTag: 55b233f9-2537-4a64-ad43-278b99a7099a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DynamicChartTitle = ```
+			
+			VAR IsDomainFiltered = ISINSCOPE(Issues[Component Name])
+			VAR IsSubDomainFiltered = ISINSCOPE('Issues'[Subdomain])
+			RETURN
+			    IF(
+			        IsDomainFiltered,
+			        "# Hours Spent by Domain",
+			        IF(
+			            IsSubDomainFiltered,
+			            "# Hours Spent by Subdomain",
+			            "# Hours Spent (All)"
+			        )
+			    )
+			
+			```
+		lineageTag: 6ef073b1-0b07-41b9-857b-1f3bcd2734bd
+
+	column Key
+		dataType: string
+		lineageTag: 2fc55933-0155-45b9-82cd-314fbada0eeb
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column Created
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 03b7adda-b87e-4df4-a0e6-58f308ec55b0
+		summarizeBy: none
+		sourceColumn: Created
+
+		variation Variation
+			isDefault
+			relationship: c42be1c4-3785-4ced-8a59-6e29daf43bb4
+			defaultHierarchy: LocalDateTable_00a475b1-cbb3-4605-a55a-972e50177984.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resolved
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 72f03f0f-9815-4d25-8315-71461eafa78a
+		summarizeBy: none
+		sourceColumn: Resolved
+
+		variation Variation
+			isDefault
+			relationship: 2b0e1cdb-0200-443d-9477-9704ce022bbb
+			defaultHierarchy: LocalDateTable_ccabd5e3-afb8-4644-affa-bd3f073e75cb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: d76a386a-298e-4559-b1e8-e28ee21314d6
+		summarizeBy: none
+		sourceColumn: Updated
+
+		variation Variation
+			isDefault
+			relationship: c42153a3-47ce-4e91-a52c-844916ef13b3
+			defaultHierarchy: LocalDateTable_d5d3dba0-a6ec-4ca3-ad22-a2e7073869f6.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Epic Name'
+		dataType: string
+		lineageTag: 5fadc72e-1e64-41de-876f-9b2f2fa5aa50
+		summarizeBy: none
+		sourceColumn: Epic Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Epic Status'
+		dataType: string
+		lineageTag: edebbd0e-dc05-49d9-9c81-4f9e070d0965
+		summarizeBy: none
+		sourceColumn: Epic Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Epic Type'
+		dataType: string
+		lineageTag: c8d4b892-1da3-4134-9858-1556d9784265
+		summarizeBy: none
+		sourceColumn: Epic Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Original estimate'
+		dataType: int64
+		formatString: 0
+		lineageTag: da3a5f2f-5d46-40b3-9d8b-8b4f97a5cf43
+		summarizeBy: sum
+		sourceColumn: Original estimate
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Spent'
+		dataType: double
+		formatString: 0.0
+		lineageTag: 3460ba3b-3d5e-4c56-a9a5-06b7e03ef53c
+		summarizeBy: sum
+		sourceColumn: Time Spent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Remaining Estimate'
+		dataType: double
+		formatString: 0.0
+		lineageTag: 60a152f2-4256-4c2f-af5c-9be373237c55
+		summarizeBy: sum
+		sourceColumn: Remaining Estimate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Original Estimate (Incl_ Sub-tasks)'
+		dataType: double
+		lineageTag: b1f4998d-abd1-490a-ad7a-f5d08c248c5e
+		summarizeBy: sum
+		sourceColumn: Original Estimate (Incl_ Sub-tasks)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Remaining Estimate (Incl_ Sub-tasks)'
+		dataType: double
+		lineageTag: af2148c7-475d-4ba4-bf39-2c0575bc34c6
+		summarizeBy: sum
+		sourceColumn: Remaining Estimate (Incl_ Sub-tasks)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Time Spent (Incl_ Sub-tasks)'
+		dataType: double
+		lineageTag: f987e88c-141e-4147-84c9-3d5085fa4a2c
+		summarizeBy: sum
+		sourceColumn: Time Spent (Incl_ Sub-tasks)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Parent Issue Key'
+		dataType: string
+		lineageTag: 260b6fd8-4b4c-4c14-825f-7c47f9cd6355
+		summarizeBy: none
+		sourceColumn: Parent Issue Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Issue Summary'
+		dataType: string
+		lineageTag: df2406ec-4997-4ee6-a1e8-4efc0b431cf8
+		summarizeBy: none
+		sourceColumn: Parent Issue Summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Issue Status'
+		dataType: string
+		lineageTag: a2485ed4-3ef2-4cf6-96a5-d5d3d6eb0275
+		summarizeBy: none
+		sourceColumn: Parent Issue Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Issue Status Category'
+		dataType: string
+		lineageTag: 44b8165e-c8a0-467c-b29c-b5bd88a098c8
+		summarizeBy: none
+		sourceColumn: Parent Issue Status Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Link'
+		dataType: string
+		lineageTag: 8eb013e9-cdfa-45c2-9aa2-75638f82409a
+		summarizeBy: none
+		sourceColumn: Parent Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Key'
+		dataType: string
+		lineageTag: 1391def4-ef5b-4104-b75e-1458d0316950
+		summarizeBy: none
+		sourceColumn: Project Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Name'
+		dataType: string
+		lineageTag: f2e19990-ae0a-4035-bb39-5c8d69162e7e
+		summarizeBy: none
+		sourceColumn: Project Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Id'
+		dataType: string
+		lineageTag: 71d32ef8-e6fe-4929-aaa4-8a47c5ccf195
+		summarizeBy: none
+		sourceColumn: Project Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Sprint Id'
+		dataType: string
+		lineageTag: 11a92766-637a-4975-ac4b-33f37a216445
+		summarizeBy: none
+		sourceColumn: Current Sprint Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Sprint Name'
+		dataType: string
+		lineageTag: 022e6b1c-3f69-4deb-a389-ada92dd96cd2
+		summarizeBy: none
+		sourceColumn: Current Sprint Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Sprint End Date'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: b1fd8b02-d0b4-40c9-98e3-067eb8699d37
+		summarizeBy: none
+		sourceColumn: Current Sprint End Date
+
+		variation Variation
+			isDefault
+			relationship: e6dfdac0-3cc6-4ed8-82b0-9d7a66a0445a
+			defaultHierarchy: LocalDateTable_597d659a-0e45-4e2f-94fa-850f5d8921ff.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Current Sprint Start Date'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 9622fddb-9619-42da-beb7-44f1bf8e979a
+		summarizeBy: none
+		sourceColumn: Current Sprint Start Date
+
+		variation Variation
+			isDefault
+			relationship: 0d0dad2f-4e09-44ea-8828-dbfd0abcd753
+			defaultHierarchy: LocalDateTable_cdb28d31-a748-4cd4-8172-be7415f90470.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Story Points'
+		dataType: double
+		lineageTag: e53baf68-920e-4a03-8d44-8af15e0fb2bd
+		summarizeBy: sum
+		sourceColumn: Story Points
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Story Points Completed'
+		dataType: double
+		lineageTag: fb92aa8f-53d3-4d1a-bb6b-ac58676e9934
+		summarizeBy: sum
+		sourceColumn: Story Points Completed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Story Points Remaining'
+		dataType: double
+		lineageTag: a7d1d868-09e3-49eb-8197-fb70ac7f8962
+		summarizeBy: sum
+		sourceColumn: Story Points Remaining
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Current Assignee:  Email'
+		dataType: string
+		lineageTag: 8af6724f-06db-4b6a-959f-b6d7755ea359
+		summarizeBy: none
+		sourceColumn: Current Assignee:  Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Assignee:  Name'
+		dataType: string
+		lineageTag: 40921100-7fda-43d6-8e49-33c38f573e3c
+		summarizeBy: none
+		sourceColumn: Current Assignee:  Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requestor:  Name'
+		dataType: string
+		lineageTag: f482bfc0-acbf-41a4-8edb-0ebae160f478
+		summarizeBy: none
+		sourceColumn: Requestor:  Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requestor:  Email'
+		dataType: string
+		lineageTag: 0e0f572b-7815-4103-a734-0ec712d6b25c
+		summarizeBy: none
+		sourceColumn: Requestor:  Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Status'
+		dataType: string
+		lineageTag: 6186a342-2807-4a23-b8ac-4b7e13b2cdd1
+		summarizeBy: none
+		sourceColumn: Current Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Activity
+		dataType: double
+		lineageTag: a034c667-ca28-4305-9a05-f7345a586678
+		summarizeBy: sum
+		sourceColumn: Activity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Accounts
+		dataType: string
+		lineageTag: b4d54c45-66f0-4b5e-b998-5e34bb8bb43b
+		summarizeBy: none
+		sourceColumn: Accounts
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Application Name'
+		dataType: string
+		lineageTag: c6bb155c-ec4e-4d1b-b262-f2a86066746b
+		summarizeBy: none
+		sourceColumn: Application Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Labels
+		dataType: string
+		lineageTag: 233ccbf6-c032-424b-b7b7-6ad61fcf5434
+		summarizeBy: none
+		sourceColumn: Labels
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Status Category'
+		dataType: string
+		lineageTag: b03fb231-23df-4ec2-b14b-e31058ad8281
+		summarizeBy: none
+		sourceColumn: Status Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comment
+		dataType: string
+		lineageTag: de08db96-28a7-4139-b7c6-cdc247924fef
+		summarizeBy: none
+		sourceColumn: Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Sprint Id (Number)'
+		dataType: double
+		lineageTag: 92fe4b19-1cb2-4914-9ac3-826c4f94f0ca
+		summarizeBy: sum
+		sourceColumn: Current Sprint Id (Number)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Component/Application
+		dataType: string
+		lineageTag: 93ebe91d-583d-4772-a304-2aae9c2d6451
+		summarizeBy: none
+		sourceColumn: Component/Application
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Component/Application: Parent'
+		dataType: string
+		lineageTag: 91d7462a-0012-4160-a7d5-f0d0abea577e
+		summarizeBy: none
+		sourceColumn: Component/Application: Parent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Domain
+		dataType: string
+		lineageTag: 0baadc97-672c-444a-95e8-02bbd4408491
+		summarizeBy: none
+		sourceColumn: Domain
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subdomain
+		dataType: string
+		lineageTag: 205c2fd3-ffb6-4db8-8929-b6d9778e0761
+		summarizeBy: none
+		sourceColumn: Subdomain
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product (2)'
+		dataType: string
+		lineageTag: c6ec4207-125c-41ef-a054-5a566075ad94
+		summarizeBy: none
+		sourceColumn: Product (2)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product (3)'
+		dataType: string
+		lineageTag: 0f2475af-e711-4511-8a5b-15c6abe6db40
+		summarizeBy: none
+		sourceColumn: Product (3)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Service Type'
+		dataType: string
+		lineageTag: 10d1394c-84ca-49b3-8718-8ff040ab8ada
+		summarizeBy: none
+		sourceColumn: Service Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RXC Domain'
+		dataType: string
+		lineageTag: c50edc66-73a8-4496-a05a-38d8ba805b46
+		summarizeBy: none
+		sourceColumn: RXC Domain
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: f9c7d9b2-b885-4ea4-9428-c6d64127b89d
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product(s)
+		dataType: string
+		lineageTag: fd01e8f8-9a64-4089-adee-cf7f384cc48f
+		summarizeBy: none
+		sourceColumn: Product(s)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KTLO Category'
+		dataType: string
+		lineageTag: b57c54b2-9ab5-4a77-802b-e6b3f0ed988c
+		summarizeBy: none
+		sourceColumn: KTLO Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Component Name' = ```
+			
+			VAR RelatedComponents = RELATEDTABLE(Component)
+			RETURN FIRSTNONBLANK(Component[Component Name], "")
+			
+			```
+		lineageTag: ef6b1bfa-c7bf-4d15-9e68-bd3e5e502b49
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priority
+		dataType: string
+		lineageTag: 0aa73288-c98e-4c2b-880a-16b4ec6388cc
+		summarizeBy: none
+		sourceColumn: Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Issue Priority'
+		dataType: string
+		lineageTag: deda6da0-c643-4177-a6c2-09c030fd3b2f
+		summarizeBy: none
+		sourceColumn: Parent Issue Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Priority (P)' = ```
+			
+			    SWITCH(
+			        Issues[Priority],
+			            "Critical", "P1",
+			            "High", "P2",
+			            "Medium", "P3",
+			            "Low", "P4",
+			            "TBD", " TBD"
+			    )
+			```
+		lineageTag: 33baec76-9225-4370-be98-9e1988ed5f36
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PDO Details' = ```
+			
+			    Issues[Key] & " | " & Issues[Summary]
+			```
+		lineageTag: 289027f6-55e5-4315-8ea9-f70bacbfe13f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Summary
+		dataType: string
+		lineageTag: 9c5c838c-8062-4051-ac40-599d973747a1
+		summarizeBy: none
+		sourceColumn: Summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column Custom:Sprint
+		dataType: string
+		lineageTag: e1b940d2-0481-45ed-8a49-5e0403d02442
+		summarizeBy: none
+		sourceColumn: Custom:Sprint
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Actual Sprint'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 863e4067-b586-45da-99d9-41aefe5cb4eb
+		summarizeBy: none
+		sourceColumn: Actual Sprint
+
+		variation Variation
+			isDefault
+			relationship: 1659f4a3-2228-489f-b2f1-dd72a0a80ee6
+			defaultHierarchy: LocalDateTable_9bfcbc92-342a-4b28-b4e2-f2a19a648bc4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Sprint State'
+		dataType: string
+		lineageTag: 88393827-2d34-4af9-a0d3-adc91fbb042b
+		summarizeBy: none
+		sourceColumn: Current Sprint State
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubTask =
+			
+			IF(
+			    CONTAINS('Sub-tasks', 'Sub-tasks'[Sub-tasks], Issues[Key]),
+			    "yes",
+			    "no"
+			)
+		lineageTag: b1cc8d50-d731-4033-87ba-b7e21b988d5b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resolution_Time_Hours = ```
+			
+			COALESCE(
+			    DATEDIFF(Issues[Start Date (1)], Issues[Resolved], HOUR),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 8ddfef9f-121c-45e6-a042-51e9392a6b99
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ticket Age (Days)' = ```
+			
+			VAR CreatedDate = 'Issues'[Created]
+			VAR ResolvedDate = 'Issues'[Resolved]
+			VAR IsResolved = NOT(ISBLANK(ResolvedDate))
+			RETURN 
+			DATEDIFF(CreatedDate, IF(IsResolved, ResolvedDate, TODAY()), DAY)
+			
+			```
+		formatString: 0
+		lineageTag: 3a159b3b-afce-4ba7-906f-e2cf43d5067c
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Aging = ```
+			
+			VAR Age = 'Issues'[Ticket Age (Days)]
+			RETURN 
+			SWITCH(
+			    TRUE(),
+			    Age <= 5, "0–5 Days",
+			    Age <= 20, "6–20 Days",
+			    Age <= 40, "21–40 Days",
+			    Age <= 90, "41–90 Days",
+			    Age > 90, "90+ Days",
+			    "Unknown"
+			)
+			```
+		lineageTag: ab882c49-d1d0-43b2-b09f-418b3e54459e
+		summarizeBy: none
+		sortByColumn: 'Aging Sort Index'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Actual Start Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 28fda5fc-1cd4-4efd-83d0-b5e5af16f185
+		summarizeBy: none
+		sourceColumn: Actual Start Date
+
+		variation Variation
+			isDefault
+			relationship: a5098c23-93d5-4a0a-81af-a25a9c8a1738
+			defaultHierarchy: LocalDateTable_a86335d2-ee18-4dbe-9319-5dce1dc67711.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 47f935df-059c-4feb-badc-4b340f20bfc2
+		summarizeBy: none
+		sourceColumn: Start date
+
+		variation Variation
+			isDefault
+			relationship: 89188f06-905f-4c3a-9e8a-4b738689b3eb
+			defaultHierarchy: LocalDateTable_1a7d6c50-413c-4784-b0e3-a440b8697687.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start Date (1)'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 8b0c19db-5118-433d-8c62-bba6c4a6e49a
+		summarizeBy: none
+		sourceColumn: Start Date (1)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Start date (2)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1ebb673c-3da9-495a-9792-aef421aa71ad
+		summarizeBy: none
+		sourceColumn: Start date (2)
+
+		variation Variation
+			isDefault
+			relationship: 0d665b0e-756b-4382-af7f-219fb9e04e00
+			defaultHierarchy: LocalDateTable_029a9194-df7a-4396-912b-150d436c5a79.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprints Name'
+		dataType: string
+		lineageTag: 6c7927ca-dfe6-4801-860c-379ac47e79a0
+		summarizeBy: none
+		sourceColumn: Sprints Name
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aging Sort Index' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'Issues'[Ticket Age (Days)] <= 5, 1,
+			    'Issues'[Ticket Age (Days)] <= 20, 2,
+			    'Issues'[Ticket Age (Days)] <= 40, 3,
+			    'Issues'[Ticket Age (Days)] <= 90, 4,
+			    5
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 991ad788-7aaf-41b1-b029-e28ea87e5380
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Incidents =
+			IF(
+			    CONTAINSSTRING('Issues'[PDO Details], "INC"),
+			    "INC",
+			    BLANK()
+			)
+		lineageTag: 6e7f2325-b9c9-4850-a6a8-87e119638874
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exclude monitoring' =
+			IF(
+			    CONTAINSSTRING('Issues'[PDO Details], "Monitoring"),
+			    "Monitoring",
+			    BLANK()
+			)
+		lineageTag: fef804c2-fa7d-4c38-a0ae-9820e4e41a31
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Component Name Hierarchy'
+		lineageTag: 8a68ef9a-d5c7-4131-9890-577df555b32e
+
+		level 'Component Name'
+			lineageTag: 0947f99e-ec90-408f-844b-490357dc9a33
+			column: 'Component Name'
+
+		level Subdomain
+			lineageTag: 4066e5cf-f361-47ef-8800-6b35422c5929
+			column: Subdomain
+
+		level 'Product (2)'
+			lineageTag: 14a3fcc4-1ac6-4abf-8f73-64b94b0d2aa9
+			column: 'Product (2)'
+
+	partition Issues = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    Issues_table = Source{[Name="Issues",Signature="table"]}[Data],
+				    #"Inserted Text After Delimiter" = Table.AddColumn(Issues_table, "Text After Delimiter", each Text.AfterDelimiter([Current Sprint Name], " ", 2), type text),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Text After Delimiter",{{"Text After Delimiter", "Sprints Name"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

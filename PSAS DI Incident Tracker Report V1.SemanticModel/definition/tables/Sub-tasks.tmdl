@@ -1,0 +1,30 @@
+table Sub-tasks
+	lineageTag: 8218a42b-f03b-4ac1-8d45-3a214253610c
+
+	column Key
+		dataType: string
+		lineageTag: 6658760f-4a54-4009-b756-4f92baa35475
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sub-tasks
+		dataType: string
+		lineageTag: e6ce2b57-1e6c-4fb7-8f66-5bcd0215fe9c
+		summarizeBy: none
+		sourceColumn: Sub-tasks
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sub-tasks = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    #"Sub-tasks_table" = Source{[Name="Sub-tasks",Signature="table"]}[Data]
+				in
+				    #"Sub-tasks_table"
+
+	annotation PBI_ResultType = Table
+

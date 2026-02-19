@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "08d2bff370176474907d",
+  "position": {
+    "x": 345.1597291694423,
+    "y": 14.32532347504621,
+    "z": 4250,
+    "height": 185,
+    "width": 320,
+    "tabOrder": 3000
+  },
+  "visualGroup": {
+    "displayName": "Planned vs Actual Capacity",
+    "groupMode": "ScaleMode"
+  },
+  "parentGroupName": "f651e25997f51e2d533a"
+}

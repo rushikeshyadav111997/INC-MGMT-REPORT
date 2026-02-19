@@ -1,0 +1,84 @@
+table Sprints
+	lineageTag: 75c08860-ae94-4b31-af2c-c6df176e61e3
+
+	column Key
+		dataType: string
+		lineageTag: 075b5b94-ae93-4ded-af63-a14ab4a8f449
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprint Id'
+		dataType: string
+		lineageTag: a21f4c19-6b1c-487a-b607-c63fdc545641
+		summarizeBy: none
+		sourceColumn: Sprint Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprint Name'
+		dataType: string
+		lineageTag: facfc07a-3d2b-447a-8358-5c014c72c5a0
+		summarizeBy: none
+		sourceColumn: Sprint Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprint End Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: afb327b4-f7f5-4b27-a63b-17719697dcd2
+		summarizeBy: none
+		sourceColumn: Sprint End Date
+
+		variation Variation
+			isDefault
+			relationship: bcad068b-4ba5-4555-93d1-9ac023cba6e8
+			defaultHierarchy: LocalDateTable_e941977e-7433-4f48-9a16-b3a691ad544f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprint Start Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4ebafa02-e001-4cab-8e65-333584ad1fe7
+		summarizeBy: none
+		sourceColumn: Sprint Start Date
+
+		variation Variation
+			isDefault
+			relationship: 7dd4af51-1ac1-417b-9343-8fa8c787847f
+			defaultHierarchy: LocalDateTable_64191795-35b2-4ee2-8445-f54592d59e8f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sprint Id (Number)'
+		dataType: double
+		lineageTag: 60859990-112e-4a72-8cfb-924e2ca502d5
+		summarizeBy: sum
+		sourceColumn: Sprint Id (Number)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sprint State'
+		dataType: string
+		lineageTag: 5af5e4ba-3fdc-4fc6-8f25-c166030b8396
+		summarizeBy: none
+		sourceColumn: Sprint State
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sprints = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    Sprints_table = Source{[Name="Sprints",Signature="table"]}[Data]
+				in
+				    Sprints_table
+
+	annotation PBI_ResultType = Table
+

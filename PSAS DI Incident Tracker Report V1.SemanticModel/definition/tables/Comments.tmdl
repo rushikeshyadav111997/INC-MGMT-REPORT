@@ -1,0 +1,103 @@
+table Comments
+	lineageTag: 5791a7ac-bea9-43c2-99f5-a130dd732fb5
+
+	measure 'Tasks Without Sub-tasks' = ```
+			
+			CALCULATE (
+			    COUNTROWS(Issues),
+			    NOT (
+			        Issues[Key] IN VALUES('Sub-tasks'[Sub-tasks])
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 4cbf099a-6aeb-4253-ba96-89e29df8555e
+
+	column Key
+		dataType: string
+		lineageTag: 953a691d-d978-4a36-90ca-ec8265a0aca6
+		summarizeBy: none
+		sourceColumn: Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Author'
+		dataType: string
+		lineageTag: 5a06c6b4-abf2-4014-a871-21c405d8fbce
+		summarizeBy: none
+		sourceColumn: Comment Author
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Body'
+		dataType: string
+		lineageTag: e94eb78f-799d-4fa9-95ad-ada4d142c6b1
+		summarizeBy: none
+		sourceColumn: Comment Body
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Body (HTML)'
+		dataType: string
+		lineageTag: a7dfd39f-ae49-4ca9-a07a-cda2fe224cce
+		summarizeBy: none
+		sourceColumn: Comment Body (HTML)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Created'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9b530fd2-1fe6-43d9-b14a-7bf3bc9a9028
+		summarizeBy: none
+		sourceColumn: Comment Created
+
+		variation Variation
+			isDefault
+			relationship: 68230c3e-eac5-4a66-b3a3-55ff2625e1e9
+			defaultHierarchy: LocalDateTable_85948901-de81-4b3e-bb4f-4d8751f02922.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Id'
+		dataType: string
+		lineageTag: 0578f256-8fba-455c-86d8-0354725da16b
+		summarizeBy: none
+		sourceColumn: Comment Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Updated'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 18867101-7ee9-4189-b739-b63aba22fd80
+		summarizeBy: none
+		sourceColumn: Comment Updated
+
+		variation Variation
+			isDefault
+			relationship: bb2ebe76-bdfd-4c2b-a11f-882723dfda8f
+			defaultHierarchy: LocalDateTable_4e366d0c-1513-4886-adf8-0cde128fac1a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Comment Public?'
+		dataType: string
+		lineageTag: 19f88660-42b0-4e92-bbda-2f89321eca0c
+		summarizeBy: none
+		sourceColumn: Is Comment Public?
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Comments = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://bi-reports.appfire.app/aio-app/rest/aio-cn/1.0/powerbi/export/YzM1MDBhZmEtMjlkYy00MWIzLTk5ZDAtMjEzZjg2YWIw", null, [Implementation="2.0"]),
+				    Comments_table = Source{[Name="Comments",Signature="table"]}[Data]
+				in
+				    Comments_table
+
+	annotation PBI_ResultType = Table
+

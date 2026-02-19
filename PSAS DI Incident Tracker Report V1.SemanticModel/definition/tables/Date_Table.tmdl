@@ -1,0 +1,119 @@
+table Date_Table
+	lineageTag: 0dbd1b5d-50aa-443c-8e43-cc2c4ce10dc3
+
+	column Date
+		formatString: Short Date
+		lineageTag: 2dcba6f2-3cbb-440d-bc0b-1b47e69dd128
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 22c5331c-c223-462e-a5d6-3b176e531bdc
+			defaultHierarchy: LocalDateTable_acb3eece-1557-4fbb-a628-4736965b8981.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		formatString: 0
+		lineageTag: 9bf6cff2-a8e3-4f06-ba36-3ae59dda8e6f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		formatString: 0
+		lineageTag: 24ffaee3-3d0d-4001-96ca-2e22b7c0f57f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		lineageTag: a947d551-8ef2-4867-8a0f-bae40c8762b0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		formatString: 0
+		lineageTag: a623d5f8-8118-46af-a7a5-fd85f93bd5ae
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Quarter Q'
+		lineageTag: bffc5244-17ec-4d9c-8446-8e4cefd109d3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter Q]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Y'
+		lineageTag: ce7d2ffa-9509-4f3f-8fcc-d45d2d244d8c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Y]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latest3MonthsFlag = ```
+			
+			VAR LatestDate = MAX('Date_Table'[Date])  -- Get the latest date in the table
+			VAR LatestMonth = MONTH(LatestDate)  -- Extract the month from the latest date
+			VAR LatestYear = YEAR(LatestDate)  -- Extract the year from the latest date
+			VAR CurrentMonth = MONTH('Date_Table'[Date])  -- Extract the month for each row in the Date Table
+			VAR CurrentYear = YEAR('Date_Table'[Date])  -- Extract the year for each row in the Date Table
+			VAR IsLatestMonth = (CurrentMonth = LatestMonth && CurrentYear = LatestYear)
+			VAR IsPreviousMonth = (CurrentMonth = LatestMonth - 1 || (LatestMonth = 1 && CurrentMonth = 12) && CurrentYear = LatestYear)
+			VAR IsTwoMonthsAgo = (CurrentMonth = LatestMonth - 2 || (LatestMonth = 2 && CurrentMonth = 12) && CurrentYear = LatestYear)
+			
+			RETURN 
+			IF(IsLatestMonth || IsPreviousMonth || IsTwoMonthsAgo, 1, 0)
+			```
+		formatString: 0
+		lineageTag: 9d4d22f6-8f55-4ee6-b971-920e77a92343
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsLast6Months =
+			
+			IF(
+			    'Date_Table'[Date] >= EDATE(TODAY(), -6) && 'Date_Table'[Date] <= TODAY(),
+			    1,
+			    0
+			)
+		formatString: 0
+		lineageTag: 84164502-36f3-4bcc-ab1f-a63526ac9b4b
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date_Table = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS (
+				    CALENDAR (DATE (2020, 1, 1), TODAY()),
+				    "Year", YEAR ( [Date] ),
+				    "Quarter", QUARTER([Date]),
+				    "Quarter Q", "Q" & QUARTER([Date]) & "-" & FORMAT([Date], "YY"),
+				    "Month Name", FORMAT ( [Date], "mmmm" ),
+				    "Month", MONTH ( [Date] ),
+				    "Month Y", FORMAT ( [Date], "mmmm" ) & "-" & FORMAT([Date], "YY")
+				)
+
+	annotation PBI_Id = 892a70768fcd4747b947dc64fa6d5e97
+

@@ -1,0 +1,64 @@
+table 'Tempo Date'
+	isHidden
+	lineageTag: 5cde2b60-6bce-497e-895c-4095416c5745
+
+	column Date
+		isHidden
+		formatString: Short Date
+		lineageTag: b518d1fe-beca-445b-a4db-4299caef3bcc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: f71133f3-7c0f-494d-a616-6467f8abd45c
+			defaultHierarchy: LocalDateTable_553eacdd-c7b0-4634-8fe8-4d8d63e9a449.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		isHidden
+		formatString: 0
+		lineageTag: daef9fe8-2b0d-4fd1-836f-db4b8e538ab3
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		isHidden
+		lineageTag: 2bfa6901-c454-4c79-bff8-7a1915db98b1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		isHidden
+		lineageTag: a10402d6-6e81-4149-bd25-a116c97ab741
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearMonth]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Tempo Date' = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR ( MIN('Tempo Report'[Work date]), MAX('Tempo Report'[Work date]) ),
+				    "Year", YEAR ( [Date] ),
+				    "Month", FORMAT ( [Date], "MMM" ),
+				    "YearMonth", FORMAT ( [Date], "YYYY-MM" )
+				)
+				
+				```
+
+	annotation PBI_Id = f8382918101e46c99a44bb619229061c
+
