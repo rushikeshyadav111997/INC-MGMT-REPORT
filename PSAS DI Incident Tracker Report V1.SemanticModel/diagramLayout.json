@@ -1,0 +1,337 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 278.57142857142861,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 615.46747796469458
+          },
+          "nodeIndex": "Comments",
+          "nodeLineageTag": "5791a7ac-bea9-43c2-99f5-a130dd732fb5",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 278,
+            "y": 0
+          },
+          "nodeIndex": "Issues",
+          "nodeLineageTag": "abe443f9-c5b1-4191-a9ed-8b6a683b52fb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 316.28571428571433,
+            "y": 562.22938091007688
+          },
+          "nodeIndex": "Linked Issues",
+          "nodeLineageTag": "36b2d9b6-74a0-4e32-a9b4-4237c8f21922",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 314.5714285714285,
+            "y": 690.89604939326614
+          },
+          "nodeIndex": "Sprints",
+          "nodeLineageTag": "75c08860-ae94-4b31-af2c-c6df176e61e3",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1087.1428571428571,
+            "y": 241.75319225040892
+          },
+          "nodeIndex": "Sub-tasks",
+          "nodeLineageTag": "8218a42b-f03b-4ac1-8d45-3a214253610c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 765.42857142857156,
+            "y": 170.6103351075518
+          },
+          "nodeIndex": "Component",
+          "nodeLineageTag": "cae31900-7af2-4c4a-b808-a3941aeeb3b7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1308.0637580271607,
+            "y": 562.351910376604
+          },
+          "nodeIndex": "Measure Table",
+          "nodeLineageTag": "8bd9add2-1fe2-45fa-b410-90ea1e47a468",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 30.349472312874695,
+            "y": 186.69220377185155
+          },
+          "nodeIndex": "Worklogs",
+          "nodeLineageTag": "bd14740e-b78d-4dd3-bf96-374fad18145e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1010.6351865985893,
+            "y": 352.85714285714283
+          },
+          "nodeIndex": "Executive Summary",
+          "nodeLineageTag": "ed12cbde-f1de-486b-b5c0-33e025d66512",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 568.44465227939236,
+            "y": 0
+          },
+          "nodeIndex": "Date Table",
+          "nodeLineageTag": "343d52e4-94aa-402d-a038-a7c9a37cd40e",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1876.0637580271607,
+            "y": 350.33265740132447
+          },
+          "nodeIndex": "Refresh",
+          "nodeLineageTag": "b1eb79e1-6c25-4363-9f51-a0d61b654a41",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {},
+          "nodeIndex": "_CapacityPlanningMeasures",
+          "nodeLineageTag": "271b2b00-3560-4834-9b94-ca756dc70098",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Tempo Report",
+          "nodeLineageTag": "8687c032-8d09-477b-822a-f86d59d0a145",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Date_Table",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Tempo Date",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Issues",
+          "nodeLineageTag": "abe443f9-c5b1-4191-a9ed-8b6a683b52fb",
+          "size": {
+            "height": 233.75,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 459.25,
+            "y": -3.75
+          },
+          "nodeIndex": "Component",
+          "nodeLineageTag": "cae31900-7af2-4c4a-b808-a3941aeeb3b7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 373,
+            "y": 260
+          },
+          "nodeIndex": "Comments",
+          "nodeLineageTag": "5791a7ac-bea9-43c2-99f5-a130dd732fb5",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 1",
+      "zoomValue": 80,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 347.14285714285717,
+            "y": 200
+          },
+          "nodeIndex": "Date_Table",
+          "nodeLineageTag": "0dbd1b5d-50aa-443c-8e43-cc2c4ce10dc3",
+          "size": {
+            "height": 217.42857142857139,
+            "width": 219.71428571428572
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Issues",
+          "nodeLineageTag": "abe443f9-c5b1-4191-a9ed-8b6a683b52fb",
+          "size": {
+            "height": 211.42857142857139,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 323.57142857142861
+          },
+          "nodeIndex": "Component",
+          "nodeLineageTag": "cae31900-7af2-4c4a-b808-a3941aeeb3b7",
+          "size": {
+            "height": 200.28571428571422,
+            "width": 228.28571428571428
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 672.28571428571433,
+            "y": 0
+          },
+          "nodeIndex": "Tempo Report",
+          "nodeLineageTag": "8687c032-8d09-477b-822a-f86d59d0a145",
+          "size": {
+            "height": 234.28571428571428,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 710.85714285714289,
+            "y": 306.42857142857144
+          },
+          "nodeIndex": "Tempo Date",
+          "nodeLineageTag": "5cde2b60-6bce-497e-895c-4095416c5745",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 2",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Layout 2",
+  "defaultDiagram": "All tables"
+}

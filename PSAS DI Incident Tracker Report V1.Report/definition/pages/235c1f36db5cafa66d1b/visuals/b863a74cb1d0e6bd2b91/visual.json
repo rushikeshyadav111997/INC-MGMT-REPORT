@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "b863a74cb1d0e6bd2b91",
+  "position": {
+    "x": 872.577319587629,
+    "y": 230.9278350515464,
+    "z": 1,
+    "height": 150.10309278350516,
+    "width": 300.20618556701032,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "ribbonChart",
+    "query": {
+      "queryState": {
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Table"
+                    }
+                  },
+                  "Property": "Avg Resolution Time in hours"
+                }
+              },
+              "queryRef": "Measure Table.Avg Resolution Time in hours",
+              "nativeQueryRef": "Avg Resolution Time in hours"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Table"
+                    }
+                  },
+                  "Property": "# Incident"
+                }
+              },
+              "queryRef": "Measure Table.# Incident",
+              "nativeQueryRef": "# Incident"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measure Table"
+                  }
+                },
+                "Property": "# Incident"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

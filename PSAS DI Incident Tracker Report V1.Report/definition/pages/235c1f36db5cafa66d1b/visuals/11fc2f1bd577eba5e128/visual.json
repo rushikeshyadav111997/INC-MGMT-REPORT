@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "11fc2f1bd577eba5e128",
+  "position": {
+    "x": 229.27835051546393,
+    "y": 169.89690721649487,
+    "z": 0,
+    "height": 392.57731958762889,
+    "width": 493.1958762886598,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pieChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Issues"
+                    }
+                  },
+                  "Property": "Domain"
+                }
+              },
+              "queryRef": "Issues.Domain",
+              "nativeQueryRef": "Domain",
+              "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Table"
+                    }
+                  },
+                  "Property": "Avg Resolution Time in hours"
+                }
+              },
+              "queryRef": "Measure Table.Avg Resolution Time in hours",
+              "nativeQueryRef": "Avg Resolution Time in hours"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Table"
+                    }
+                  },
+                  "Property": "# Incident"
+                }
+              },
+              "queryRef": "Measure Table.# Incident",
+              "nativeQueryRef": "# Incident"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measure Table"
+                  }
+                },
+                "Property": "# Incident"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
