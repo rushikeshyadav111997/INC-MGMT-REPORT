@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "d068bf0e9f40e72be53e",
+  "position": {
+    "x": 415.67010309278356,
+    "y": 125.36082474226805,
+    "z": 0,
+    "height": 451.958762886598,
+    "width": 494.84536082474233,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Issues"
+                    }
+                  },
+                  "Property": "RXC Domain"
+                }
+              },
+              "queryRef": "Issues.RXC Domain",
+              "nativeQueryRef": "RXC Domain"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Issues"
+                    }
+                  },
+                  "Property": "Subdomain"
+                }
+              },
+              "queryRef": "Issues.Subdomain",
+              "nativeQueryRef": "Subdomain"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
