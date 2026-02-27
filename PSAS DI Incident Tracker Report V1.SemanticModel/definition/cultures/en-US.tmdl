@@ -4384,6 +4384,12 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "issue key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "parent issue solution": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4444,43 +4450,43 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "parent issue answer": {
+			          "issue solution": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.468
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "parent issue mean": {
+			          "issue explanation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.468
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "parent issue secret": {
+			          "issue basis": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.468
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "parent issue source": {
+			          "issue recipe": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.468
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
@@ -4497,6 +4503,12 @@ cultureInfo en-US
 			        {
 			          "parent issue summary": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "issue summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -4540,6 +4552,46 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "issue synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
 			          "parent issue review": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4551,46 +4603,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "parent issue abstract": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue outline": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue overview": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue paraphrase": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue recap": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -4623,6 +4635,12 @@ cultureInfo en-US
 			        {
 			          "parent issue status": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "issue status": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -4666,6 +4684,46 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "issue category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
 			          "parent issue condition": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4677,46 +4735,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "parent issue class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue level": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue position": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "parent issue rank": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7752,16 +7770,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Status :": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -7906,6 +7914,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "version": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
 			          "interpretation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -7957,6 +7975,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "story": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "report": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -8686,7 +8714,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Application": {
+			          "Application Name": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -8696,7 +8724,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Application Name": {
+			          "Application": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -17642,6 +17670,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -17921,6 +17959,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "interval": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -17938,6 +17986,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        },
 			        {
@@ -20202,114 +20260,114 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measure Table",
-			          "ConceptualProperty": "# Incident"
+			          "ConceptualProperty": "Incident"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "# incident": {
+			          "incident": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "no incident": {
+			          "occurrence": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "num incident": {
+			          "episode": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "number incident": {
+			          "thing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "# occurrence": {
+			          "event": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "# episode": {
+			          "occasion": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "# thing": {
+			          "happening": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "# event": {
+			          "instance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "# occasion": {
+			          "case": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "# happening": {
+			          "confrontation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.466
 			          }
 			        },
 			        {
-			          "# instance": {
+			          "scene": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.466
 			          }
 			        },
 			        {
@@ -20462,16 +20520,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "# Incidents (Total)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -20727,16 +20775,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "Incident Resolution Time": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -21858,7 +21896,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__CapacityPlanningMeasure.billable_hour": {
+			    "entity__CapacityPlanningMeasure.billable_hours": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_CapacityPlanningMeasures",
@@ -21868,7 +21906,7 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "billable hour": {
+			          "billable hours": {
 			            "State": "Generated"
 			          }
 			        },
@@ -21883,7 +21921,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "billable era": {
+			          "billable eras": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -22172,7 +22210,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1": {
+			    "date_table": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table"
@@ -22294,7 +22332,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.date1": {
+			    "date_table.date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22317,11 +22355,21 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.date.date_hierarchy1": {
+			    "date_table.date.date_hierarchy": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22341,7 +22389,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.date.year1": {
+			    "date_table.date.year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22406,7 +22454,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.date.quarter1": {
+			    "date_table.date.quarter": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22471,7 +22519,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.date.month1": {
+			    "date_table.date.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22536,7 +22584,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.date.day1": {
+			    "date_table.date.day": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22581,7 +22629,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.year1": {
+			    "date_table.year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22608,7 +22656,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table.quarter1": {
+			    "date_table.quarter": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22634,7 +22682,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.month_name1": {
+			    "date_table.month_name": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22700,7 +22748,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.month1": {
+			    "date_table.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22726,7 +22774,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.quarter_q1": {
+			    "date_table.quarter_q": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22758,7 +22806,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.month_y1": {
+			    "date_table.month_y": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22790,7 +22838,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.latest_3_months_flag1": {
+			    "date_table.latest_3_months_flag": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -22952,7 +23000,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table.is_last_6_month1": {
+			    "date_table.is_last_6_month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Date_Table",
@@ -23094,6 +23142,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "tempo date": {
@@ -23130,6 +23181,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "date": {
@@ -23145,6 +23199,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -23159,6 +23223,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "date hierarchy": {
@@ -23180,6 +23247,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "year": {
@@ -23245,6 +23315,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "quarter": {
@@ -23310,6 +23383,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "month": {
@@ -23375,6 +23451,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "day": {
@@ -23417,6 +23496,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "year": {
@@ -23444,6 +23526,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "month": {
@@ -23470,6 +23555,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "year month": {
@@ -23624,16 +23712,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.475
 			          }
-			        },
-			        {
-			          "Completed": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -23764,669 +23842,1257 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "issue.exclude_monitoring": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Issues",
+			          "ConceptualProperty": "Exclude monitoring"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "exclude monitoring": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "exclude nursing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.CARD_average_resolution_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "(CARD) Average Resolution Time (Hours)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "(CARD) average resolution time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "(CARD) average resolution time (Hours)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "hour"
+			      ]
+			    },
+			    "worklog.tempo_task_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Task Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: task type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: task category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: task genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: task manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: task variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: task brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: task class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: task kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: task style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: task form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: task grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: account title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: account label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: account tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: acct name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.629
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: account answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "tempo: account mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "tempo: account secret": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "tempo: account source": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_billable_hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Billable Hours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: billable hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: billable period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "tempo: billable era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: billable epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "tempo: billable age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_work_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Work Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: work type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: work category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: work genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: work manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: work variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: work brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: work class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: work kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: work style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: work form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "tempo: work grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_worklog_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Worklog ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: worklog ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: worklog identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: worklog identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: worklog identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: worklog credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_category_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account Category Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account category name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account category nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account classification name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "tempo: account class name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "tempo: account group name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "tempo: account type name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "tempo: account grouping name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "tempo: account kind name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_category_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account Category Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account category type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account category category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "tempo: account category genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "tempo: account category manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "tempo: account category variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "tempo: account category brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "tempo: account category grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tempo: version": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tempo: interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tempo: justification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tempo: reason": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "tempo: excuse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "tempo: description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tempo: relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tempo: story": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "tempo: report": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_customer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account customer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account customer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.tempo_account_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "Tempo: Account ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo: account ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo: account identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "tempo: account credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.sprint_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "SprintName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sprint name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SprintName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sprint nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sprint title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sprint label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sprint tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.KTLO_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "KTLO Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KTLO category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ktlo classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ktlo class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ktlo group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ktlo type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ktlo grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ktlo kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "worklog.year_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Worklogs",
+			          "ConceptualProperty": "YearMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "YearMonth": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "year mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "date_table_date_date_hierarchy1_has_date_table_date_month1": {
-			      "Binding": {
-			        "ConceptualEntity": "Date_Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date.date_hierarchy1": {
-			          "Target": {
-			            "Entity": "date_table.date.date_hierarchy1"
-			          }
-			        },
-			        "date_table.date.month1": {
-			          "Target": {
-			            "Entity": "date_table.date.month1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date.date_hierarchy1"
-			            },
-			            "Object": {
-			              "Role": "date_table.date.month1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "date_table_date_date_hierarchy1_has_date_table_date_quarter1": {
-			      "Binding": {
-			        "ConceptualEntity": "Date_Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date.date_hierarchy1": {
-			          "Target": {
-			            "Entity": "date_table.date.date_hierarchy1"
-			          }
-			        },
-			        "date_table.date.quarter1": {
-			          "Target": {
-			            "Entity": "date_table.date.quarter1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date.date_hierarchy1"
-			            },
-			            "Object": {
-			              "Role": "date_table.date.quarter1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "date_table_date_date_hierarchy1_has_date_table_date_year1": {
-			      "Binding": {
-			        "ConceptualEntity": "Date_Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date.date_hierarchy1": {
-			          "Target": {
-			            "Entity": "date_table.date.date_hierarchy1"
-			          }
-			        },
-			        "date_table.date.year1": {
-			          "Target": {
-			            "Entity": "date_table.date.year1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date.date_hierarchy1"
-			            },
-			            "Object": {
-			              "Role": "date_table.date.year1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "date_table_date1_has_date_table_date_date_hierarchy1": {
-			      "Binding": {
-			        "ConceptualEntity": "Date_Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date1": {
-			          "Target": {
-			            "Entity": "date_table.date1"
-			          }
-			        },
-			        "date_table.date.date_hierarchy1": {
-			          "Target": {
-			            "Entity": "date_table.date.date_hierarchy1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date1"
-			            },
-			            "Object": {
-			              "Role": "date_table.date.date_hierarchy1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "issue_component_name_hierarchy_subdomain_has_issue_component_name_hierarchy_product_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.component_name_hierarchy.subdomain": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.subdomain"
-			          }
-			        },
-			        "issue.component_name_hierarchy.product_2": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.product_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.product_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "subdomains_have_product_2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.product_2"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "product_2_have_subdomains"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.product_2"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "product_2_are_in_subdomains"
-			        }
-			      ]
-			    },
-			    "issue_component_name_hierarchy_component_name_has_issue_component_name_hierarchy_subdomain": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.component_name_hierarchy.component_name": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.component_name"
-			          }
-			        },
-			        "issue.component_name_hierarchy.subdomain": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.subdomain"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.component_name"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "component_names_have_subdomains"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.component_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "subdomains_have_component_names"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.component_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "subdomains_are_in_component_names"
-			        }
-			      ]
-			    },
-			    "issue_component_name_hierarchy_has_product_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.component_name_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy"
-			          }
-			        },
-			        "issue.component_name_hierarchy.product_2": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.product_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.product_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "component_name_hierarchies_have_product_2"
-			        }
-			      ]
-			    },
-			    "issue_component_name_hierarchy_has_subdomain": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.component_name_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy"
-			          }
-			        },
-			        "issue.component_name_hierarchy.subdomain": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.subdomain"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.subdomain"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "component_name_hierarchies_have_subdomains"
-			        }
-			      ]
-			    },
-			    "issue_component_name_hierarchy_has_component_name": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.component_name_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy"
-			          }
-			        },
-			        "issue.component_name_hierarchy.component_name": {
-			          "Target": {
-			            "Entity": "issue.component_name_hierarchy.component_name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.component_name_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.component_name_hierarchy.component_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "component_name_hierarchies_have_component_names"
-			        }
-			      ]
-			    },
-			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date_2.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date_2.day": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date_2.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date_2.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchy__2__have_start_day__2_"
-			        }
-			      ]
-			    },
-			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date_2.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date_2.month": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date_2.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date_2.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchy__2__have_start_month__2_"
-			        }
-			      ]
-			    },
-			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date_2.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date_2.quarter": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date_2.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date_2.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchy__2__have_start_quarter__2_"
-			        }
-			      ]
-			    },
-			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date_2.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date_2.year": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date_2.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date_2.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchy__2__have_start_year__2_"
-			        }
-			      ]
-			    },
-			    "issue_start_date_2_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date_2": {
-			          "Target": {
-			            "Entity": "issue.start_date_2"
-			          }
-			        },
-			        "issue.start_date_2.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date_2.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date_2"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date_2.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_2_have_start_date_hierarchy__2_"
-			        }
-			      ]
-			    },
-			    "issue_start_date_date_hierarchy_has_issue_start_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date.day": {
-			          "Target": {
-			            "Entity": "issue.start_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchies_have_start_days"
-			        }
-			      ]
-			    },
-			    "issue_start_date_date_hierarchy_has_issue_start_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date.month": {
-			          "Target": {
-			            "Entity": "issue.start_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchies_have_start_months"
-			        }
-			      ]
-			    },
-			    "issue_start_date_date_hierarchy_has_issue_start_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date.quarter": {
-			          "Target": {
-			            "Entity": "issue.start_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchies_have_start_quarters"
-			        }
-			      ]
-			    },
-			    "issue_start_date_date_hierarchy_has_issue_start_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Issues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "issue.start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "issue.start_date.date_hierarchy"
-			          }
-			        },
-			        "issue.start_date.year": {
-			          "Target": {
-			            "Entity": "issue.start_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "issue.start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "issue.start_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_date_hierarchies_have_start_years"
-			        }
-			      ]
-			    },
 			    "issue_start_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Issues"
@@ -24654,7 +25320,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days1"
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    },
@@ -24687,7 +25353,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months2"
+			          "ID": "date_hierarchies_have_months"
 			        }
 			      ]
 			    },
@@ -24720,7 +25386,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters2"
+			          "ID": "date_hierarchies_have_quarters"
 			        }
 			      ]
 			    },
@@ -24753,7 +25419,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years2"
+			          "ID": "date_hierarchies_have_years"
 			        }
 			      ]
 			    },
@@ -24786,7 +25452,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies2"
+			          "ID": "dates_have_date_hierarchies"
 			        }
 			      ]
 			    },
@@ -27284,7 +27950,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "issue_has_date_table1": {
+			    "issue_has_date_table": {
 			      "Binding": {
 			        "ConceptualEntity": "Issues"
 			      },
@@ -27295,9 +27961,9 @@ cultureInfo en-US
 			            "Entity": "issue"
 			          }
 			        },
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        }
 			      },
@@ -27308,7 +27974,7 @@ cultureInfo en-US
 			              "Role": "issue"
 			            },
 			            "Object": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            }
 			          },
 			          "State": "Generated",
@@ -27318,7 +27984,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
 			              "Role": "issue"
@@ -27409,6 +28075,534 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "worklog_has_year_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.year_month": {
+			          "Target": {
+			            "Entity": "worklog.year_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.year_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_year_months"
+			        }
+			      ]
+			    },
+			    "worklog_has_KTLO_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.KTLO_category": {
+			          "Target": {
+			            "Entity": "worklog.KTLO_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.KTLO_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_KTLO_categories"
+			        }
+			      ]
+			    },
+			    "worklog_has_sprint_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.sprint_name": {
+			          "Target": {
+			            "Entity": "worklog.sprint_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.sprint_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_sprint_names"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_ID": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_ID"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_customer": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_customer": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_customer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_customer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_customers"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_accounts"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_category_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_category_type": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_category_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_category_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_category_types"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_category_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_category_name": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_category_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_category_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_category_names"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_worklog_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_worklog_ID": {
+			          "Target": {
+			            "Entity": "worklog.tempo_worklog_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_worklog_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_worklog_ID"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_work_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_work_type": {
+			          "Target": {
+			            "Entity": "worklog.tempo_work_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_work_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_work_types"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_billable_hour": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_billable_hour": {
+			          "Target": {
+			            "Entity": "worklog.tempo_billable_hour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_billable_hour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_billable_hours"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_key": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_keys"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_account_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_account_name": {
+			          "Target": {
+			            "Entity": "worklog.tempo_account_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_account_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_account_names"
+			        }
+			      ]
+			    },
+			    "worklog_has_tempo_task_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Worklogs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "worklog": {
+			          "Target": {
+			            "Entity": "worklog"
+			          }
+			        },
+			        "worklog.tempo_task_type": {
+			          "Target": {
+			            "Entity": "worklog.tempo_task_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Object": {
+			              "Role": "worklog.tempo_task_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "worklogs_have_tempo_task_types"
+			        }
+			      ]
+			    },
+			    "issue_has_measure_table_CARD_average_resolution_time": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue": {
+			          "Target": {
+			            "Entity": "issue"
+			          }
+			        },
+			        "measure_table.CARD_average_resolution_time": {
+			          "Target": {
+			            "Entity": "measure_table.CARD_average_resolution_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue"
+			            },
+			            "Object": {
+			              "Role": "measure_table.CARD_average_resolution_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "issues_have_CARD_average_resolution_time"
+			        }
+			      ]
+			    },
+			    "issue_has_exclude_monitoring": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue": {
+			          "Target": {
+			            "Entity": "issue"
+			          }
+			        },
+			        "issue.exclude_monitoring": {
+			          "Target": {
+			            "Entity": "issue.exclude_monitoring"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue"
+			            },
+			            "Object": {
+			              "Role": "issue.exclude_monitoring"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "issues_have_exclude_monitoring"
+			        }
+			      ]
+			    },
 			    "issue_has_measure_table_in_progress_tickets": {
 			      "Binding": {
 			        "ConceptualEntity": "Issues"
@@ -27472,155 +28666,43 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "issues_have_completed_tickets"
-			        }
-			      ]
-			    },
-			    "tempo_date_has_year_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tempo_date": {
-			          "Target": {
-			            "Entity": "tempo_date"
-			          }
 			        },
-			        "tempo_date.year_month": {
-			          "Target": {
-			            "Entity": "tempo_date.year_month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Adjective": {
 			            "Subject": {
-			              "Role": "tempo_date"
+			              "Role": "issue"
 			            },
-			            "Object": {
-			              "Role": "tempo_date.year_month"
+			            "Adjectives": [
+			              {
+			                "Completed": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "measure_table.completed_tickets"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "tempo_dates_have_year_months"
+			          "ID": "completed_tickets_indicates_how_Completed_issues_are"
 			        }
 			      ]
 			    },
-			    "tempo_date_has_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tempo_date": {
-			          "Target": {
-			            "Entity": "tempo_date"
-			          }
-			        },
-			        "tempo_date.month": {
-			          "Target": {
-			            "Entity": "tempo_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tempo_date"
-			            },
-			            "Object": {
-			              "Role": "tempo_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tempo_dates_have_months"
-			        }
-			      ]
-			    },
-			    "tempo_date_has_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tempo_date": {
-			          "Target": {
-			            "Entity": "tempo_date"
-			          }
-			        },
-			        "tempo_date.year": {
-			          "Target": {
-			            "Entity": "tempo_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tempo_date"
-			            },
-			            "Object": {
-			              "Role": "tempo_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tempo_dates_have_years"
-			        }
-			      ]
-			    },
-			    "tempo_date_has_date": {
-			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tempo_date": {
-			          "Target": {
-			            "Entity": "tempo_date"
-			          }
-			        },
-			        "tempo_date.date": {
-			          "Target": {
-			            "Entity": "tempo_date.date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tempo_date"
-			            },
-			            "Object": {
-			              "Role": "tempo_date.date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tempo_dates_have_dates"
-			        }
-			      ]
-			    },
-			    "date_table1_has_date_table_is_last_6_month1": {
+			    "date_table_has_is_last_6_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.is_last_6_month1": {
+			        "date_table.is_last_6_month": {
 			          "Target": {
-			            "Entity": "date_table.is_last_6_month1"
+			            "Entity": "date_table.is_last_6_month"
 			          }
 			        }
 			      },
@@ -27628,10 +28710,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.is_last_6_month1"
+			              "Role": "date_table.is_last_6_month"
 			            }
 			          },
 			          "State": "Generated",
@@ -27640,20 +28722,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_latest_3_months_flag1": {
+			    "date_table_has_latest_3_months_flag": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.latest_3_months_flag1": {
+			        "date_table.latest_3_months_flag": {
 			          "Target": {
-			            "Entity": "date_table.latest_3_months_flag1"
+			            "Entity": "date_table.latest_3_months_flag"
 			          }
 			        }
 			      },
@@ -27661,10 +28743,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.latest_3_months_flag1"
+			              "Role": "date_table.latest_3_months_flag"
 			            }
 			          },
 			          "State": "Generated",
@@ -27673,20 +28755,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_month_y1": {
+			    "date_table_has_month_y": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.month_y1": {
+			        "date_table.month_y": {
 			          "Target": {
-			            "Entity": "date_table.month_y1"
+			            "Entity": "date_table.month_y"
 			          }
 			        }
 			      },
@@ -27694,10 +28776,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.month_y1"
+			              "Role": "date_table.month_y"
 			            }
 			          },
 			          "State": "Generated",
@@ -27706,20 +28788,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_quarter_q1": {
+			    "date_table_has_quarter_q": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.quarter_q1": {
+			        "date_table.quarter_q": {
 			          "Target": {
-			            "Entity": "date_table.quarter_q1"
+			            "Entity": "date_table.quarter_q"
 			          }
 			        }
 			      },
@@ -27727,10 +28809,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.quarter_q1"
+			              "Role": "date_table.quarter_q"
 			            }
 			          },
 			          "State": "Generated",
@@ -27739,20 +28821,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_month1": {
+			    "date_table_has_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.month1": {
+			        "date_table.month": {
 			          "Target": {
-			            "Entity": "date_table.month1"
+			            "Entity": "date_table.month"
 			          }
 			        }
 			      },
@@ -27760,10 +28842,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.month1"
+			              "Role": "date_table.month"
 			            }
 			          },
 			          "State": "Generated",
@@ -27772,20 +28854,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_month_name1": {
+			    "date_table_has_month_name": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.month_name1": {
+			        "date_table.month_name": {
 			          "Target": {
-			            "Entity": "date_table.month_name1"
+			            "Entity": "date_table.month_name"
 			          }
 			        }
 			      },
@@ -27793,10 +28875,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.month_name1"
+			              "Role": "date_table.month_name"
 			            }
 			          },
 			          "State": "Generated",
@@ -27805,20 +28887,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_quarter1": {
+			    "date_table_has_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.quarter1": {
+			        "date_table.quarter": {
 			          "Target": {
-			            "Entity": "date_table.quarter1"
+			            "Entity": "date_table.quarter"
 			          }
 			        }
 			      },
@@ -27826,10 +28908,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.quarter1"
+			              "Role": "date_table.quarter"
 			            }
 			          },
 			          "State": "Generated",
@@ -27838,20 +28920,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_year1": {
+			    "date_table_has_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.year1": {
+			        "date_table.year": {
 			          "Target": {
-			            "Entity": "date_table.year1"
+			            "Entity": "date_table.year"
 			          }
 			        }
 			      },
@@ -27859,10 +28941,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.year1"
+			              "Role": "date_table.year"
 			            }
 			          },
 			          "State": "Generated",
@@ -27871,20 +28953,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table1_has_date_table_date1": {
+			    "date_table_has_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table1": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "date_table1"
+			            "Entity": "date_table"
 			          }
 			        },
-			        "date_table.date1": {
+			        "date_table.date": {
 			          "Target": {
-			            "Entity": "date_table.date1"
+			            "Entity": "date_table.date"
 			          }
 			        }
 			      },
@@ -27892,15 +28974,48 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table1"
+			              "Role": "date_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.date1"
+			              "Role": "date_table.date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_tables_have_dates"
+			        }
+			      ]
+			    },
+			    "entity__CapacityPlanningMeasure_has_available_hours_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "_CapacityPlanningMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__CapacityPlanningMeasure": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure"
+			          }
+			        },
+			        "entity__CapacityPlanningMeasure.available_hours_daily": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure.available_hours_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__CapacityPlanningMeasure"
+			            },
+			            "Object": {
+			              "Role": "entity__CapacityPlanningMeasure.available_hours_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_CapacityPlanningMeasures_have_available_hours_daily"
 			        }
 			      ]
 			    },
@@ -28036,7 +29151,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "issue_has_entity__CapacityPlanningMeasure_billable_hour": {
+			    "issue_has_entity__CapacityPlanningMeasure_billable_hours": {
 			      "Binding": {
 			        "ConceptualEntity": "Issues"
 			      },
@@ -28047,9 +29162,9 @@ cultureInfo en-US
 			            "Entity": "issue"
 			          }
 			        },
-			        "entity__CapacityPlanningMeasure.billable_hour": {
+			        "entity__CapacityPlanningMeasure.billable_hours": {
 			          "Target": {
-			            "Entity": "entity__CapacityPlanningMeasure.billable_hour"
+			            "Entity": "entity__CapacityPlanningMeasure.billable_hours"
 			          }
 			        }
 			      },
@@ -28060,12 +29175,12 @@ cultureInfo en-US
 			              "Role": "issue"
 			            },
 			            "Object": {
-			              "Role": "entity__CapacityPlanningMeasure.billable_hour"
+			              "Role": "entity__CapacityPlanningMeasure.billable_hours"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "issues_have_billable_hour"
+			          "ID": "issues_have_billable_hours"
 			        },
 			        {
 			          "Adjective": {
@@ -28080,12 +29195,12 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Measurement": {
-			              "Role": "entity__CapacityPlanningMeasure.billable_hour"
+			              "Role": "entity__CapacityPlanningMeasure.billable_hours"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "billable_hour_indicates_how_Billable_issues_are"
+			          "ID": "billable_hours_indicates_how_Billable_issues_are"
 			        }
 			      ]
 			    },
@@ -28119,6 +29234,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "issues_have_planned_vs_actual_capacity"
+			        }
+			      ]
+			    },
+			    "entity__CapacityPlanningMeasure_has_actual_capacity_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "_CapacityPlanningMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__CapacityPlanningMeasure": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure"
+			          }
+			        },
+			        "entity__CapacityPlanningMeasure.actual_capacity_hours": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure.actual_capacity_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__CapacityPlanningMeasure"
+			            },
+			            "Object": {
+			              "Role": "entity__CapacityPlanningMeasure.actual_capacity_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_CapacityPlanningMeasures_have_actual_capacity_hours"
+			        }
+			      ]
+			    },
+			    "entity__CapacityPlanningMeasure_has_planned_capacity_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "_CapacityPlanningMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__CapacityPlanningMeasure": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure"
+			          }
+			        },
+			        "entity__CapacityPlanningMeasure.planned_capacity_hours": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure.planned_capacity_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__CapacityPlanningMeasure"
+			            },
+			            "Object": {
+			              "Role": "entity__CapacityPlanningMeasure.planned_capacity_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_CapacityPlanningMeasures_have_planned_capacity_hours"
+			        }
+			      ]
+			    },
+			    "entity__CapacityPlanningMeasure_has_available_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "_CapacityPlanningMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__CapacityPlanningMeasure": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure"
+			          }
+			        },
+			        "entity__CapacityPlanningMeasure.available_hours": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure.available_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__CapacityPlanningMeasure"
+			            },
+			            "Object": {
+			              "Role": "entity__CapacityPlanningMeasure.available_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_CapacityPlanningMeasures_have_available_hours"
+			        }
+			      ]
+			    },
+			    "entity__CapacityPlanningMeasure_has_actual_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "_CapacityPlanningMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__CapacityPlanningMeasure": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure"
+			          }
+			        },
+			        "entity__CapacityPlanningMeasure.actual_hours": {
+			          "Target": {
+			            "Entity": "entity__CapacityPlanningMeasure.actual_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__CapacityPlanningMeasure"
+			            },
+			            "Object": {
+			              "Role": "entity__CapacityPlanningMeasure.actual_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_CapacityPlanningMeasures_have_actual_hours"
 			        }
 			      ]
 			    },
@@ -28221,15 +29468,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measure_table_has_avg_resolution_time_in_hours": {
+			    "issue_has_measure_table_avg_resolution_time_in_hours": {
 			      "Binding": {
-			        "ConceptualEntity": "Measure Table"
+			        "ConceptualEntity": "Issues"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "measure_table": {
+			        "issue": {
 			          "Target": {
-			            "Entity": "measure_table"
+			            "Entity": "issue"
 			          }
 			        },
 			        "measure_table.avg_resolution_time_in_hours": {
@@ -28242,7 +29489,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "measure_table"
+			              "Role": "issue"
 			            },
 			            "Object": {
 			              "Role": "measure_table.avg_resolution_time_in_hours"
@@ -28250,7 +29497,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "measure_tables_have_avg_resolution_time_in_hours"
+			          "ID": "issues_have_avg_resolution_time_in_hours"
 			        }
 			      ]
 			    },
@@ -28287,15 +29534,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measure_table_has_dynamic_filter_text": {
+			    "issue_has_measure_table_dynamic_filter_text": {
 			      "Binding": {
-			        "ConceptualEntity": "Measure Table"
+			        "ConceptualEntity": "Issues"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "measure_table": {
+			        "issue": {
 			          "Target": {
-			            "Entity": "measure_table"
+			            "Entity": "issue"
 			          }
 			        },
 			        "measure_table.dynamic_filter_text": {
@@ -28308,7 +29555,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "measure_table"
+			              "Role": "issue"
 			            },
 			            "Object": {
 			              "Role": "measure_table.dynamic_filter_text"
@@ -28316,19 +29563,52 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "measure_tables_have_dynamic_filter_text"
+			          "ID": "issues_have_dynamic_filter_text"
 			        }
 			      ]
 			    },
-			    "measure_table_has_average_resolution_time": {
+			    "date_table_has_measure_table_dynamic_filter_text": {
 			      "Binding": {
-			        "ConceptualEntity": "Measure Table"
+			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "measure_table": {
+			        "date_table": {
 			          "Target": {
-			            "Entity": "measure_table"
+			            "Entity": "date_table"
+			          }
+			        },
+			        "measure_table.dynamic_filter_text": {
+			          "Target": {
+			            "Entity": "measure_table.dynamic_filter_text"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table"
+			            },
+			            "Object": {
+			              "Role": "measure_table.dynamic_filter_text"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_dynamic_filter_text"
+			        }
+			      ]
+			    },
+			    "issue_has_measure_table_average_resolution_time": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue": {
+			          "Target": {
+			            "Entity": "issue"
 			          }
 			        },
 			        "measure_table.average_resolution_time": {
@@ -28341,7 +29621,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "measure_table"
+			              "Role": "issue"
 			            },
 			            "Object": {
 			              "Role": "measure_table.average_resolution_time"
@@ -28349,7 +29629,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "measure_tables_have_average_resolution_time"
+			          "ID": "issues_have_average_resolution_time"
 			        }
 			      ]
 			    },
@@ -28547,7 +29827,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "issues_have__incident"
+			          "ID": "issues_have_incident"
 			        }
 			      ]
 			    },
@@ -28878,39 +30158,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "refreshes_have_last_refreshes"
-			        }
-			      ]
-			    },
-			    "refresh_has_executive_summary_report_refresh_time": {
-			      "Binding": {
-			        "ConceptualEntity": "Refresh"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh": {
-			          "Target": {
-			            "Entity": "refresh"
-			          }
-			        },
-			        "executive_summary.report_refresh_time": {
-			          "Target": {
-			            "Entity": "executive_summary.report_refresh_time"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh"
-			            },
-			            "Object": {
-			              "Role": "executive_summary.report_refresh_time"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "refreshes_have_report_refresh_time"
 			        }
 			      ]
 			    },
@@ -29268,6 +30515,19 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "worklogs_have_time_entry_user_isActive"
+			        },
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "worklog"
+			            },
+			            "Adjective": {
+			              "Role": "worklog.time_entry_user_isActive"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "time_entry_user_isActive_describe_worklogs"
 			        }
 			      ]
 			    },
@@ -33089,20 +34349,548 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "date_table_date_date_hierarchy1_has_date_table_date_day1": {
+			    "issue_start_date_date_hierarchy_has_issue_start_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date.year": {
+			          "Target": {
+			            "Entity": "issue.start_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_years"
+			        }
+			      ]
+			    },
+			    "issue_start_date_date_hierarchy_has_issue_start_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date.quarter": {
+			          "Target": {
+			            "Entity": "issue.start_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_quarters"
+			        }
+			      ]
+			    },
+			    "issue_start_date_date_hierarchy_has_issue_start_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date.month": {
+			          "Target": {
+			            "Entity": "issue.start_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_months"
+			        }
+			      ]
+			    },
+			    "issue_start_date_date_hierarchy_has_issue_start_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date.day": {
+			          "Target": {
+			            "Entity": "issue.start_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_days"
+			        }
+			      ]
+			    },
+			    "issue_start_date_2_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date_2": {
+			          "Target": {
+			            "Entity": "issue.start_date_2"
+			          }
+			        },
+			        "issue.start_date_2.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date_2"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date_2.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_2_have_start_date_hierarchy__2_"
+			        }
+			      ]
+			    },
+			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date_2.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date_2.year": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date_2.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date_2.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__2__have_start_year__2_"
+			        }
+			      ]
+			    },
+			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date_2.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date_2.quarter": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date_2.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date_2.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__2__have_start_quarter__2_"
+			        }
+			      ]
+			    },
+			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date_2.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date_2.month": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date_2.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date_2.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__2__have_start_month__2_"
+			        }
+			      ]
+			    },
+			    "issue_start_date_2_date_hierarchy_has_issue_start_date_2_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.start_date_2.date_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.date_hierarchy"
+			          }
+			        },
+			        "issue.start_date_2.day": {
+			          "Target": {
+			            "Entity": "issue.start_date_2.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.start_date_2.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.start_date_2.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__2__have_start_day__2_"
+			        }
+			      ]
+			    },
+			    "issue_component_name_hierarchy_has_component_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.component_name_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy"
+			          }
+			        },
+			        "issue.component_name_hierarchy.component_name": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.component_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.component_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "component_name_hierarchies_have_component_names"
+			        }
+			      ]
+			    },
+			    "issue_component_name_hierarchy_has_subdomain": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.component_name_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy"
+			          }
+			        },
+			        "issue.component_name_hierarchy.subdomain": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.subdomain"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "component_name_hierarchies_have_subdomains"
+			        }
+			      ]
+			    },
+			    "issue_component_name_hierarchy_has_product_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.component_name_hierarchy": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy"
+			          }
+			        },
+			        "issue.component_name_hierarchy.product_2": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.product_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.product_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "component_name_hierarchies_have_product_2"
+			        }
+			      ]
+			    },
+			    "issue_component_name_hierarchy_component_name_has_issue_component_name_hierarchy_subdomain": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.component_name_hierarchy.component_name": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.component_name"
+			          }
+			        },
+			        "issue.component_name_hierarchy.subdomain": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.subdomain"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.component_name"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "component_names_have_subdomains"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.component_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "subdomains_have_component_names"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.component_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "subdomains_are_in_component_names"
+			        }
+			      ]
+			    },
+			    "issue_component_name_hierarchy_subdomain_has_issue_component_name_hierarchy_product_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Issues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "issue.component_name_hierarchy.subdomain": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.subdomain"
+			          }
+			        },
+			        "issue.component_name_hierarchy.product_2": {
+			          "Target": {
+			            "Entity": "issue.component_name_hierarchy.product_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.product_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "subdomains_have_product_2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.product_2"
+			            },
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_2_have_subdomains"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "issue.component_name_hierarchy.product_2"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "issue.component_name_hierarchy.subdomain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_2_are_in_subdomains"
+			        }
+			      ]
+			    },
+			    "date_table_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table.date.date_hierarchy1": {
+			        "date_table.date": {
 			          "Target": {
-			            "Entity": "date_table.date.date_hierarchy1"
+			            "Entity": "date_table.date"
 			          }
 			        },
-			        "date_table.date.day1": {
+			        "date_table.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "date_table.date.day1"
+			            "Entity": "date_table.date.date_hierarchy"
 			          }
 			        }
 			      },
@@ -33110,32 +34898,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table.date.date_hierarchy1"
+			              "Role": "date_table.date"
 			            },
 			            "Object": {
-			              "Role": "date_table.date.day1"
+			              "Role": "date_table.date.date_hierarchy"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days2"
+			          "ID": "dates_have_date_hierarchies1"
 			        }
 			      ]
 			    },
-			    "tempo_date_date_has_date_hierarchy": {
+			    "date_table_date_date_hierarchy_has_date_table_date_year": {
 			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
+			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "tempo_date.date": {
+			        "date_table.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "tempo_date.date"
+			            "Entity": "date_table.date.date_hierarchy"
 			          }
 			        },
-			        "tempo_date.date.date_hierarchy": {
+			        "date_table.date.year": {
 			          "Target": {
-			            "Entity": "tempo_date.date.date_hierarchy"
+			            "Entity": "date_table.date.year"
 			          }
 			        }
 			      },
@@ -33143,32 +34931,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "tempo_date.date"
+			              "Role": "date_table.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "tempo_date.date.date_hierarchy"
+			              "Role": "date_table.date.year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies3"
+			          "ID": "date_hierarchies_have_years1"
 			        }
 			      ]
 			    },
-			    "tempo_date_date_date_hierarchy_has_tempo_date_date_year": {
+			    "date_table_date_date_hierarchy_has_date_table_date_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
+			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "tempo_date.date.date_hierarchy": {
+			        "date_table.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "tempo_date.date.date_hierarchy"
+			            "Entity": "date_table.date.date_hierarchy"
 			          }
 			        },
-			        "tempo_date.date.year": {
+			        "date_table.date.quarter": {
 			          "Target": {
-			            "Entity": "tempo_date.date.year"
+			            "Entity": "date_table.date.quarter"
 			          }
 			        }
 			      },
@@ -33176,32 +34964,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "tempo_date.date.date_hierarchy"
+			              "Role": "date_table.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "tempo_date.date.year"
+			              "Role": "date_table.date.quarter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years3"
+			          "ID": "date_hierarchies_have_quarters1"
 			        }
 			      ]
 			    },
-			    "tempo_date_date_date_hierarchy_has_tempo_date_date_quarter": {
+			    "date_table_date_date_hierarchy_has_date_table_date_month": {
 			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
+			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "tempo_date.date.date_hierarchy": {
+			        "date_table.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "tempo_date.date.date_hierarchy"
+			            "Entity": "date_table.date.date_hierarchy"
 			          }
 			        },
-			        "tempo_date.date.quarter": {
+			        "date_table.date.month": {
 			          "Target": {
-			            "Entity": "tempo_date.date.quarter"
+			            "Entity": "date_table.date.month"
 			          }
 			        }
 			      },
@@ -33209,32 +34997,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "tempo_date.date.date_hierarchy"
+			              "Role": "date_table.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "tempo_date.date.quarter"
+			              "Role": "date_table.date.month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters3"
+			          "ID": "date_hierarchies_have_months1"
 			        }
 			      ]
 			    },
-			    "tempo_date_date_date_hierarchy_has_tempo_date_date_month": {
+			    "date_table_date_date_hierarchy_has_date_table_date_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
+			        "ConceptualEntity": "Date_Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "tempo_date.date.date_hierarchy": {
+			        "date_table.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "tempo_date.date.date_hierarchy"
+			            "Entity": "date_table.date.date_hierarchy"
 			          }
 			        },
-			        "tempo_date.date.month": {
+			        "date_table.date.day": {
 			          "Target": {
-			            "Entity": "tempo_date.date.month"
+			            "Entity": "date_table.date.day"
 			          }
 			        }
 			      },
@@ -33242,48 +35030,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "tempo_date.date.date_hierarchy"
+			              "Role": "date_table.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "tempo_date.date.month"
+			              "Role": "date_table.date.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months3"
-			        }
-			      ]
-			    },
-			    "tempo_date_date_date_hierarchy_has_tempo_date_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Tempo Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tempo_date.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "tempo_date.date.date_hierarchy"
-			          }
-			        },
-			        "tempo_date.date.day": {
-			          "Target": {
-			            "Entity": "tempo_date.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tempo_date.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "tempo_date.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days3"
+			          "ID": "date_hierarchies_have_days1"
 			        }
 			      ]
 			    }

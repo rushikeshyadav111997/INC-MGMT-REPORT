@@ -635,9 +635,11 @@ table Issues
 			SWITCH(
 			    TRUE(),
 			    Age <= 5, "0–5 Days",
-			    Age <= 20, "6–20 Days",
-			    Age <= 40, "21–40 Days",
-			    Age <= 90, "41–90 Days",
+			    Age <= 10, "6–10 Days",
+			    Age <= 15, "15–20 Days",
+			    Age <= 20, "21–30 Days",
+			    Age <= 30, "31–60 Days",
+			    Age <= 60, "61–90 Days",
 			    Age > 90, "90+ Days",
 			    "Unknown"
 			)
