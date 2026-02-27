@@ -216,7 +216,7 @@ table 'Measure Table'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure '# Incident' =
+	measure Incident =
 			
 			CALCULATE(
 			    DISTINCTCOUNT('Issues'[Key]),
@@ -286,8 +286,8 @@ table 'Measure Table'
 			    ),
 			    Issues[Time Spent]
 			)
-			// RETURN if(ISBLANK(a),0,CONCATENATE(a,"H"))
-			RETURN if(ISBLANK(a),0,a)
+			//  RETURN if(ISBLANK(a),0,CONCATENATE(a,"H"))
+			 RETURN if(ISBLANK(a),0,a)
 			
 			
 			```
@@ -402,6 +402,28 @@ table 'Measure Table'
 			if(ISBLANK(a),0,a)
 		formatString: 0
 		lineageTag: e68fd21a-0dcd-4077-a3ef-a377b8201c0a
+
+	measure '(CARD) Average Resolution Time (Hours)' = ```
+			
+			var a = AVERAGEX(
+			    FILTER (
+			        Issues,
+			        NOT ISBLANK ( Issues[Resolved] )
+			        && NOT ISBLANK ( Issues[Created] )
+			        && Issues[Current Status] IN { "Closed", "Done", "Blocked" }
+			        && 'Issues'[Parent Issue Summary] = "Production Support"
+			    ),
+			    Issues[Time Spent]
+			)
+			 RETURN 
+			IF(
+			    ISBLANK(a),
+			    "0 H",
+			    FORMAT(a, "0.00") & "H"
+			)
+			
+			```
+		lineageTag: bb7fd751-c53f-4224-bc2c-101345439824
 
 	partition 'Measure Table' = m
 		mode: import
