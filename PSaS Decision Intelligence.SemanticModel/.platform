@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PSaS Decision Intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "26e59a96-5963-b5a7-4883-0d1071226368"
+  }
+}

@@ -13247,12 +13247,7 @@ cultureInfo en-US
 			            "State": "Generated"
 			          }
 			        },
-			        {
-			          "state": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
+			        {},
 			        {
 			          "current sprint location": {
 			            "Type": "Noun",
@@ -13369,12 +13364,7 @@ cultureInfo en-US
 			            "State": "Generated"
 			          }
 			        },
-			        {
-			          "state": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
+			        {},
 			        {
 			          "sprint location": {
 			            "Type": "Noun",

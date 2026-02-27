@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PSaS Decision Intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1bc7e106-36ee-8997-4b9b-a2d5456d7fe0"
+  }
+}
