@@ -10,8 +10,6 @@ annotation PBI_QueryOrder = ["Components","Comments","Component","Issues","Linke
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["DevMode"]
-
 ref table DateTableTemplate_13d38ccc-a035-48af-b9c7-662e6a3ae4b4
 ref table Comments
 ref table LocalDateTable_85948901-de81-4b3e-bb4f-4d8751f02922
